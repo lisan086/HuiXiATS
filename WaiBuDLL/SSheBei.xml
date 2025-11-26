@@ -1,0 +1,1375 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SSheBei</name>
+    </assembly>
+    <members>
+        <member name="T:SSheBei.ABSSheBei.ABSNSheBei">
+            <summary>
+            一个虚设备
+            </summary>
+        </member>
+        <member name="P:SSheBei.ABSSheBei.ABSNSheBei.SheBeiID">
+            <summary>
+            设备id
+            </summary>
+        </member>
+        <member name="P:SSheBei.ABSSheBei.ABSNSheBei.SheBeiName">
+            <summary>
+            设备的名称
+            </summary>
+        </member>
+        <member name="P:SSheBei.ABSSheBei.ABSNSheBei.FenZu">
+            <summary>
+            设备的分组
+            </summary>
+        </member>
+        <member name="P:SSheBei.ABSSheBei.ABSNSheBei.PeiZhiObjName">
+            <summary>
+            配置参数用的
+            </summary>
+        </member>
+        <member name="P:SSheBei.ABSSheBei.ABSNSheBei.GuanBiDuXie">
+            <summary>
+            true 关闭读和写
+            </summary>
+        </member>
+        <member name="P:SSheBei.ABSSheBei.ABSNSheBei.SheBeiType">
+            <summary>
+            设备类型
+            </summary>
+        </member>
+        <member name="P:SSheBei.ABSSheBei.ABSNSheBei.BanBenHao">
+            <summary>
+            设备类型
+            </summary>
+        </member>
+        <member name="P:SSheBei.ABSSheBei.ABSNSheBei.TongXin">
+            <summary>
+            设备通信 true表示通信成功
+            </summary>
+        </member>
+        <member name="E:SSheBei.ABSSheBei.ABSNSheBei.SheBeiMsgEvnt">
+            <summary>
+            设备的通信
+            </summary>
+        </member>
+        <member name="E:SSheBei.ABSSheBei.ABSNSheBei.DuShuJuChuFaEvent">
+            <summary>
+            读事件的单独触发
+            </summary>
+        </member>
+        <member name="M:SSheBei.ABSSheBei.ABSNSheBei.IniData(System.Boolean)">
+            <summary>
+            设备初始化
+            </summary>
+        </member>
+        <member name="M:SSheBei.ABSSheBei.ABSNSheBei.Open">
+            <summary>
+            打开总线上的设备
+            </summary>    
+        </member>
+        <member name="M:SSheBei.ABSSheBei.ABSNSheBei.Close">
+            <summary>
+            关闭设备
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SSheBei.ABSSheBei.ABSNSheBei.XieShuJu(System.Collections.Generic.List{SSheBei.Model.JiCunQiModel})">
+            <summary>
+            发送数据
+            </summary>
+            <param name="canshus"></param>
+        </member>
+        <member name="M:SSheBei.ABSSheBei.ABSNSheBei.Clear(System.Boolean,SSheBei.Model.JiCunQiModel)">
+            <summary>
+            true是否清理全部
+            </summary>
+            <param name="isquanbu"></param>
+            <param name="model"></param>
+        </member>
+        <member name="M:SSheBei.ABSSheBei.ABSNSheBei.GetMeiGeTx">
+            <summary>
+            获取每个通信
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SSheBei.ABSSheBei.ABSNSheBei.JiaoYanChengGong(SSheBei.Model.JiCunQiModel)">
+            <summary>
+            用这校验数据ID
+            </summary>
+            <param name="jicunqiid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SSheBei.ABSSheBei.ABSNSheBei.GetShuJu">
+            <summary>
+            获取读参数
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SSheBei.ABSSheBei.ABSNSheBei.GetFrm(System.Boolean)">
+            <summary>
+            获取配置和调试界面
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SSheBei.ABSSheBei.ABSNSheBei.PeiZhiDuXie(System.Int32)">
+            <summary>
+            用于配置读写 1是读 2是写 3是全部
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SSheBei.ABSSheBei.ABSNSheBei.GetLianJieQi(System.Int32)">
+            <summary>
+            获取连接器
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SSheBei.ABSSheBei.ABSNSheBei.GetCanShuKJ(System.String)">
+            <summary>
+            获取参数KJ
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SSheBei.ABSSheBei.ABSNSheBei.ChuFaMsg(SSheBei.Model.MsgDengJi,System.String)">
+            <summary>
+            触发设备消息
+            </summary>
+            <param name="dengJi"></param>
+            <param name="msg"></param>     
+        </member>
+        <member name="M:SSheBei.ABSSheBei.ABSNSheBei.ChuFaDu(System.Int32)">
+            <summary>
+            触发读
+            </summary>
+        </member>
+        <member name="T:SSheBei.ABSSheBei.KJPeiZhiJK">
+            <summary>
+            用于配置加载控件
+            </summary>
+        </member>
+        <member name="M:SSheBei.ABSSheBei.KJPeiZhiJK.GetPeiZhiKJ(System.String)">
+            <summary>
+            加载配置控件
+            </summary>
+            <returns></returns>
+            <param name="jicunqibiaoshi"></param>
+        </member>
+        <member name="M:SSheBei.ABSSheBei.KJPeiZhiJK.SetCanShu(System.String)">
+            <summary>
+            设置参数
+            </summary>
+            <param name="canshu"></param>
+        </member>
+        <member name="M:SSheBei.ABSSheBei.KJPeiZhiJK.GetCanShu">
+            <summary>
+            获取配置参数
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:SSheBei.CRCJiaoYan.CRC">
+            <summary>
+            CRC校验
+            </summary>
+        </member>
+        <member name="M:SSheBei.CRCJiaoYan.CRC.ToModbus(System.Collections.Generic.List{System.Byte},System.Boolean)">
+            <summary>
+            CRC16_Modbus效验 true 表示高位在前，false表示高位在后
+            </summary>
+            <param name="byteData">要进行计算的字节数组</param>
+            <param name="gaiweizaiqian">true 表示高位在前，false表示高位在后</param>
+            <returns>计算后的数组</returns>
+        </member>
+        <member name="M:SSheBei.CRCJiaoYan.CRC.GetInt(System.Collections.Generic.List{System.Byte},System.Int32)">
+            <summary>
+            获取该数据段对于的int32值
+            </summary>
+            <param name="shuju"></param>
+            <param name="failvalue">转换不成功的值</param>
+            <returns></returns>
+        </member>
+        <member name="M:SSheBei.CRCJiaoYan.CRC.GetInt(System.Collections.Generic.List{System.Byte},System.Boolean,System.Int32)">
+            <summary>
+            获取该数据段对于的int32值
+            </summary>
+            <param name="shuju"></param>
+            <param name="isxunxu"></param>
+            <param name="failvalue">转换不成功的值</param>
+            <returns></returns>
+        </member>
+        <member name="M:SSheBei.CRCJiaoYan.CRC.GetFloat(System.Byte[])">
+            <summary>
+            获取标准的浮点数
+            </summary>
+            <param name="shuju"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SSheBei.CRCJiaoYan.CRC.ShiOrByte2(System.Int32,System.Boolean)">
+            <summary>
+            把十进制转成两个二进制 true高位在前，低位在后
+            </summary>
+            <param name="len"></param>
+            <param name="isgaoweizaiqian">true高位在前，低位在后</param>
+            <returns></returns>
+        </member>
+        <member name="M:SSheBei.CRCJiaoYan.CRC.JiaoHuanByte(System.Collections.Generic.List{System.Byte})">
+            <summary>
+            高低位交换用于modbutcp
+            </summary>
+            <param name="geshu"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SSheBei.CRCJiaoYan.CRC.Get10OrB4(System.Int32,System.Boolean)">
+            <summary>
+            把一个10进制转成4个16进制的byte数据
+            </summary>
+            <param name="len"></param>
+            <param name="isgaoweizaiqian">true高位在前，低位在后</param>
+            <returns></returns>
+        </member>
+        <member name="M:SSheBei.CRCJiaoYan.CRC.Get10OrB(System.Int32,System.Boolean)">
+            <summary>
+            把一个10进制转成两个16进制的byte数据
+            </summary>
+            <param name="len"></param>
+            <param name="isgaoweizaiqian">true高位在前，低位在后</param>
+            <returns></returns>
+        </member>
+        <member name="M:SSheBei.CRCJiaoYan.CRC.GetMiaoSu(System.String,System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            用于描述数据
+            </summary>
+            <param name="canshu"></param>
+            <param name="zuixiaozhi"></param>
+            <param name="zuidazhi"></param>
+            <param name="danwei"></param>
+            <param name="biaojiao"></param>
+            <param name="miaosu"></param>
+            <returns></returns>
+        </member>
+        <member name="T:SSheBei.LianJieQi.ABSLianJieQi">
+            <summary>
+            连接器的总称
+            </summary>
+        </member>
+        <member name="P:SSheBei.LianJieQi.ABSLianJieQi.Name">
+            <summary>
+            用于描述内容
+            </summary>
+        </member>
+        <member name="P:SSheBei.LianJieQi.ABSLianJieQi.TongXinState">
+            <summary>
+            通信状态 bool表示通信成功
+            </summary>
+        </member>
+        <member name="M:SSheBei.LianJieQi.ABSLianJieQi.Send(System.Byte[])">
+            <summary>
+            发送数据的方法,如果ResultModel.IsChengGong==true,表示发送数据成功
+            </summary>
+            <param name="data">发送数据</param>
+            <returns></returns>
+        </member>
+        <member name="M:SSheBei.LianJieQi.ABSLianJieQi.Read">
+            <summary>
+            读取数据方法,如果ResultModel.IsChengGong==true,表示读取数据成功
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SSheBei.LianJieQi.ABSLianJieQi.Open">
+             <summary>
+            打开通信 如果ResultModel.IsChengGong==true,表示打开成功
+             </summary>
+             <returns></returns>
+        </member>
+        <member name="M:SSheBei.LianJieQi.ABSLianJieQi.Close">
+             <summary>
+            关闭通信 如果ResultModel.IsChengGong==true,表示关闭成功
+             </summary>
+             <returns></returns>
+        </member>
+        <member name="M:SSheBei.LianJieQi.ABSLianJieQi.SetCanShu(SSheBei.Model.SetLianJieQiModel)">
+            <summary>
+            外部实现接口 设置参数
+            </summary>
+            <param name="model"></param>
+        </member>
+        <member name="M:SSheBei.LianJieQi.ABSLianJieQi.ChongLian">
+            <summary>
+            重新连接 true表示重新连接成功
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:SSheBei.LianJieQi.RJ232LianJieQi">
+            <summary>
+            232与485的通信连接器
+            </summary>
+        </member>
+        <member name="F:SSheBei.LianJieQi.RJ232LianJieQi.SerPortCOM">
+            <summary>
+            串口对象
+            </summary>
+        </member>
+        <member name="F:SSheBei.LianJieQi.RJ232LianJieQi.SerportModel">
+            <summary>
+            串口参数对象
+            </summary>
+        </member>
+        <member name="F:SSheBei.LianJieQi.RJ232LianJieQi._ComMiaoSu">
+            <summary>
+            描述
+            </summary>
+        </member>
+        <member name="P:SSheBei.LianJieQi.RJ232LianJieQi.Name">
+            <summary>
+            连接器的名称
+            </summary>
+        </member>
+        <member name="P:SSheBei.LianJieQi.RJ232LianJieQi.TongXinState">
+            <summary>
+            true表示通讯上
+            </summary>
+        </member>
+        <member name="M:SSheBei.LianJieQi.RJ232LianJieQi.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:SSheBei.LianJieQi.RJ232LianJieQi.Send(System.Byte[])">
+            <summary>
+            发送数据的方法,如果ResultModel.IsChengGong==true,
+            </summary>
+            <param name="bytData">发送数据</param>
+            <returns>返回一个 ResultModel对象</returns>
+        </member>
+        <member name="M:SSheBei.LianJieQi.RJ232LianJieQi.Read">
+            <summary>
+            读取数据方法,如果ResultModel.IsChengGong==true
+            </summary>
+            <returns>返回一个 ResultModel对象</returns>
+        </member>
+        <member name="M:SSheBei.LianJieQi.RJ232LianJieQi.Open">
+            <summary>
+            打开串口的方法,如果ResultModel.IsChengGong==true,打开成功
+            </summary>
+            <returns>返回一个 ResultModel对象</returns>
+        </member>
+        <member name="M:SSheBei.LianJieQi.RJ232LianJieQi.Close">
+            <summary>
+            关闭连接 
+            </summary>
+            <returns>返回ResultModel对象</returns>
+        </member>
+        <member name="M:SSheBei.LianJieQi.RJ232LianJieQi.SetCanShu(SSheBei.Model.SetLianJieQiModel)">
+            <summary>
+            设置连接的参数
+            </summary>
+            <param name="model"></param>
+        </member>
+        <member name="M:SSheBei.LianJieQi.RJ232LianJieQi.ChongLian">
+            <summary>
+            重连接用的
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:SSheBei.LianJieQi.RJ45TcpLianJieQi">
+            <summary>
+            网口tcp通信
+            </summary>
+        </member>
+        <member name="F:SSheBei.LianJieQi.RJ45TcpLianJieQi._sSocket">
+            <summary>
+            网络连接口
+            </summary>
+        </member>
+        <member name="F:SSheBei.LianJieQi.RJ45TcpLianJieQi.RJmodel">
+            <summary>
+            存放rjmodel
+            </summary>
+        </member>
+        <member name="F:SSheBei.LianJieQi.RJ45TcpLianJieQi.ComMiaoSu">
+            <summary>
+            描述
+            </summary>
+        </member>
+        <member name="M:SSheBei.LianJieQi.RJ45TcpLianJieQi.#ctor">
+            <summary>
+            构造函数
+            </summary>     
+        </member>
+        <member name="P:SSheBei.LianJieQi.RJ45TcpLianJieQi.Name">
+            <summary>
+            名称
+            </summary>
+        </member>
+        <member name="P:SSheBei.LianJieQi.RJ45TcpLianJieQi.TongXinState">
+            <summary>
+            true表示通信成功
+            </summary>
+        </member>
+        <member name="M:SSheBei.LianJieQi.RJ45TcpLianJieQi.Close">
+            <summary>
+            关闭连接器
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SSheBei.LianJieQi.RJ45TcpLianJieQi.Open">
+            <summary>
+            打开连接器
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SSheBei.LianJieQi.RJ45TcpLianJieQi.Read">
+            <summary>
+            连接器读数
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SSheBei.LianJieQi.RJ45TcpLianJieQi.Send(System.Byte[])">
+            <summary>
+            连接器发送数据
+            </summary>
+            <param name="bytData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SSheBei.LianJieQi.RJ45TcpLianJieQi.SetCanShu(SSheBei.Model.SetLianJieQiModel)">
+            <summary>
+            连接器设置参数
+            </summary>
+            <param name="model"></param>
+        </member>
+        <member name="M:SSheBei.LianJieQi.RJ45TcpLianJieQi.ChongLian">
+            <summary>
+            重连
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:SSheBei.LianJieQi.RJ45UdpLianJieQi">
+            <summary>
+            UDP连接器
+            </summary>
+        </member>
+        <member name="F:SSheBei.LianJieQi.RJ45UdpLianJieQi.udpSend">
+            <summary>
+            网络连接口
+            </summary>
+        </member>
+        <member name="F:SSheBei.LianJieQi.RJ45UdpLianJieQi.RJmodel">
+            <summary>
+            存放rjmodel
+            </summary>
+        </member>
+        <member name="F:SSheBei.LianJieQi.RJ45UdpLianJieQi.RemoteIPEP">
+            <summary>
+            服务器的IP终结点
+            </summary>
+        </member>
+        <member name="F:SSheBei.LianJieQi.RJ45UdpLianJieQi.ComMiaoSu">
+            <summary>
+            描述
+            </summary>
+        </member>
+        <member name="F:SSheBei.LianJieQi.RJ45UdpLianJieQi.State">
+            <summary>
+            状态
+            </summary>
+        </member>
+        <member name="M:SSheBei.LianJieQi.RJ45UdpLianJieQi.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="P:SSheBei.LianJieQi.RJ45UdpLianJieQi.Name">
+            <summary>
+            连接器的名称
+            </summary>
+        </member>
+        <member name="P:SSheBei.LianJieQi.RJ45UdpLianJieQi.TongXinState">
+            <summary>
+            true表示通信成功
+            </summary>
+        </member>
+        <member name="M:SSheBei.LianJieQi.RJ45UdpLianJieQi.Close">
+            <summary>
+            关闭连接器
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SSheBei.LianJieQi.RJ45UdpLianJieQi.Open">
+            <summary>
+            打开连接器
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SSheBei.LianJieQi.RJ45UdpLianJieQi.Read">
+            <summary>
+            连接器读数
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SSheBei.LianJieQi.RJ45UdpLianJieQi.Send(System.Byte[])">
+            <summary>
+            连接器发送数据
+            </summary>
+            <param name="bytData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SSheBei.LianJieQi.RJ45UdpLianJieQi.SetCanShu(SSheBei.Model.SetLianJieQiModel)">
+            <summary>
+            连接器设置参数
+            </summary>
+            <param name="model"></param>
+        </member>
+        <member name="M:SSheBei.LianJieQi.RJ45UdpLianJieQi.ChongLian">
+            <summary>
+            连接器重连
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:SSheBei.LianJieQi.TCPLianJieQi">
+            <summary>
+            TCP连接器
+            </summary>
+        </member>
+        <member name="F:SSheBei.LianJieQi.TCPLianJieQi.TcpClient">
+            <summary>
+            表示发送报文的客户端
+            </summary>
+        </member>
+        <member name="F:SSheBei.LianJieQi.TCPLianJieQi.NetworkStream">
+            <summary>
+            表示报文链接流
+            </summary>
+        </member>
+        <member name="F:SSheBei.LianJieQi.TCPLianJieQi.RJmodel">
+            <summary>
+            存放rjmodel
+            </summary>
+        </member>
+        <member name="F:SSheBei.LianJieQi.TCPLianJieQi.ComMiaoSu">
+            <summary>
+            描述
+            </summary>
+        </member>
+        <member name="M:SSheBei.LianJieQi.TCPLianJieQi.#ctor">
+            <summary>
+            构造函数
+            </summary>     
+        </member>
+        <member name="P:SSheBei.LianJieQi.TCPLianJieQi.Name">
+            <summary>
+            名称
+            </summary>
+        </member>
+        <member name="P:SSheBei.LianJieQi.TCPLianJieQi.TongXinState">
+            <summary>
+            true表示通信成功
+            </summary>
+        </member>
+        <member name="M:SSheBei.LianJieQi.TCPLianJieQi.Close">
+            <summary>
+            关闭连接器
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SSheBei.LianJieQi.TCPLianJieQi.Open">
+            <summary>
+            打开连接器
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SSheBei.LianJieQi.TCPLianJieQi.Read">
+            <summary>
+            连接器读数
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SSheBei.LianJieQi.TCPLianJieQi.Send(System.Byte[])">
+            <summary>
+            连接器发送数据
+            </summary>
+            <param name="bytData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SSheBei.LianJieQi.TCPLianJieQi.SetCanShu(SSheBei.Model.SetLianJieQiModel)">
+            <summary>
+            连接器设置参数
+            </summary>
+            <param name="model"></param>
+        </member>
+        <member name="M:SSheBei.LianJieQi.TCPLianJieQi.ChongLian">
+            <summary>
+            重连
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:SSheBei.Model.DataModel">
+            <summary>
+            总线返回的数据
+            </summary>
+        </member>
+        <member name="P:SSheBei.Model.DataModel.SheBeiID">
+            <summary>
+            设备的ID
+            </summary>
+        </member>
+        <member name="P:SSheBei.Model.DataModel.IsKeKao">
+            <summary>
+            true表示可靠数据
+            </summary>
+        </member>
+        <member name="P:SSheBei.Model.DataModel.JiCunQiModels">
+            <summary>
+            返回的读寄存器数据集合
+            </summary>
+        </member>
+        <member name="T:SSheBei.Model.JiaZaiSheBeiModel">
+            <summary>
+            用于加载设备
+            </summary>
+        </member>
+        <member name="P:SSheBei.Model.JiaZaiSheBeiModel.SheBeiID">
+            <summary>
+            设备ID
+            </summary>
+        </member>
+        <member name="P:SSheBei.Model.JiaZaiSheBeiModel.SheBeiName">
+            <summary>
+            设备名称
+            </summary>
+        </member>
+        <member name="P:SSheBei.Model.JiaZaiSheBeiModel.IsShiYong">
+            <summary>
+            true表示使用
+            </summary>
+        </member>
+        <member name="P:SSheBei.Model.JiaZaiSheBeiModel.SheBeiType">
+            <summary>
+            设备类型
+            </summary>
+        </member>
+        <member name="P:SSheBei.Model.JiaZaiSheBeiModel.JiaZaiWanJianName">
+            <summary>
+            加载的文件名称
+            </summary>
+        </member>
+        <member name="P:SSheBei.Model.JiaZaiSheBeiModel.SheBeiPeiZhi">
+            <summary>
+            设备配置
+            </summary>
+        </member>
+        <member name="P:SSheBei.Model.JiaZaiSheBeiModel.SheBeiZu">
+            <summary>
+            设备配置
+            </summary>
+        </member>
+        <member name="T:SSheBei.Model.JiCunQiModel">
+            <summary>
+            对外输出寄存器model
+            </summary>
+        </member>
+        <member name="P:SSheBei.Model.JiCunQiModel.WeiYiBiaoShi">
+            <summary>
+            唯一标识
+            </summary>
+        </member>
+        <member name="P:SSheBei.Model.JiCunQiModel.Value">
+            <summary>
+            寄存器写入读出参数
+            </summary>
+        </member>
+        <member name="P:SSheBei.Model.JiCunQiModel.SheBeiID">
+            <summary>
+            设备的ID
+            </summary>
+        </member>
+        <member name="P:SSheBei.Model.JiCunQiModel.IsKeKao">
+            <summary>
+            true  表示可靠
+            </summary>
+        </member>
+        <member name="P:SSheBei.Model.JiCunQiModel.MiaoSu">
+            <summary>
+            描述:赋值描述:最小值:最大值:单位:采用比较关系
+            </summary>
+        </member>
+        <member name="P:SSheBei.Model.JiCunQiModel.DuXie">
+             <summary>
+            1是读 2是写 3是读写一起
+             </summary>
+        </member>
+        <member name="M:SSheBei.Model.JiCunQiModel.FuZhi">
+            <summary>
+            复制一个副本
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:SSheBei.Model.JiaoYanJieGuoModel">
+            <summary>
+            校验结果的model
+            </summary>
+        </member>
+        <member name="P:SSheBei.Model.JiaoYanJieGuoModel.WeiYiBiaoShi">
+            <summary>
+            唯一标识
+            </summary>
+        </member>
+        <member name="P:SSheBei.Model.JiaoYanJieGuoModel.Value">
+            <summary>
+            寄存器写入读出参数
+            </summary>
+        </member>
+        <member name="P:SSheBei.Model.JiaoYanJieGuoModel.SheBeiID">
+            <summary>
+            设备的ID
+            </summary>
+        </member>
+        <member name="P:SSheBei.Model.JiaoYanJieGuoModel.IsZuiZhongJieGuo">
+            <summary>
+            true 表示最终结果
+            </summary>
+        </member>
+        <member name="T:SSheBei.Model.JieGuoType">
+            <summary>
+            结果的类型
+            </summary>
+        </member>
+        <member name="F:SSheBei.Model.JieGuoType.JingXingZhong">
+            <summary>
+            数据正在计算中，还没有结果
+            </summary>
+        </member>
+        <member name="F:SSheBei.Model.JieGuoType.ShiBaiJiGuo">
+            <summary>
+            数据是失败结果
+            </summary>
+        </member>
+        <member name="F:SSheBei.Model.JieGuoType.ChengGongJiGuo">
+            <summary>
+            数据是成功的
+            </summary>
+        </member>
+        <member name="F:SSheBei.Model.JieGuoType.BuKeKaoJieGuo">
+            <summary>
+            通信断开，导致不可靠结果
+            </summary>
+        </member>
+        <member name="F:SSheBei.Model.JieGuoType.MeiZhaoDaoJiGuo">
+            <summary>
+            没有找到该寄存器
+            </summary>
+        </member>
+        <member name="T:SSheBei.Model.JieMianFrmModel">
+            <summary>
+            显示调试界面的参数
+            </summary>
+        </member>
+        <member name="P:SSheBei.Model.JieMianFrmModel.Form">
+            <summary>
+            调试界面
+            </summary>
+        </member>
+        <member name="P:SSheBei.Model.JieMianFrmModel.SheBeiName">
+            <summary>
+            设备名称
+            </summary>
+        </member>
+        <member name="P:SSheBei.Model.JieMianFrmModel.FenZu">
+            <summary>
+            设备分组
+            </summary>
+        </member>
+        <member name="P:SSheBei.Model.JieMianFrmModel.SheBeiID">
+            <summary>
+            设备ID
+            </summary>
+        </member>
+        <member name="T:SSheBei.Model.MsgDengJi">
+            <summary>
+            消息等级枚举
+            </summary>
+        </member>
+        <member name="F:SSheBei.Model.MsgDengJi.SheBeiZhengChang">
+            <summary>
+            正常显示
+            </summary>
+        </member>
+        <member name="F:SSheBei.Model.MsgDengJi.SheBeiCuoWu">
+            <summary>
+            错误要显示
+            </summary>
+        </member>
+        <member name="F:SSheBei.Model.MsgDengJi.SheBeiTangChuang">
+            <summary>
+            弹窗
+            </summary>
+        </member>
+        <member name="F:SSheBei.Model.MsgDengJi.SheBeiBaoWen">
+            <summary>
+            不显示
+            </summary>
+        </member>
+        <member name="F:SSheBei.Model.MsgDengJi.SheBeiXie">
+            <summary>
+            设备写参数
+            </summary>
+        </member>
+        <member name="T:SSheBei.Model.ZongXianMsg">
+            <summary>
+            总线上的信息
+            </summary>
+            <param name="dengJi">消息等级</param>
+            <param name="e">消息内容</param>  
+        </member>
+        <member name="T:SSheBei.Model.MsgModel">
+            <summary>
+            总线消息数据
+            </summary>
+        </member>
+        <member name="P:SSheBei.Model.MsgModel.Msg">
+            <summary>
+            消息
+            </summary>
+        </member>
+        <member name="P:SSheBei.Model.MsgModel.SheBeiName">
+            <summary>
+            设备的名称
+            </summary>
+        </member>
+        <member name="P:SSheBei.Model.MsgModel.SheBeiID">
+            <summary>
+            那些设备总有的消息
+            </summary>
+        </member>
+        <member name="T:SSheBei.Model.PathModel">
+            <summary>
+            路径model
+            </summary>
+        </member>
+        <member name="P:SSheBei.Model.PathModel.LuJin">
+            <summary>
+            路径
+            </summary>
+        </member>
+        <member name="T:SSheBei.Model.ResultModel">
+            <summary>
+            接收的结果
+            </summary>
+        </member>
+        <member name="P:SSheBei.Model.ResultModel.Msg">
+            <summary>
+            返回消息
+            </summary>
+        </member>
+        <member name="P:SSheBei.Model.ResultModel.IsSuccess">
+            <summary>
+            是否成功，成功为true，失败为false
+            </summary>
+        </member>
+        <member name="P:SSheBei.Model.ResultModel.TData">
+            <summary>
+            返回数据
+            </summary>
+        </member>
+        <member name="M:SSheBei.Model.ResultModel.#ctor">
+            <summary>
+            构造函数,默认是失败的,返回消息是空
+            </summary>
+        </member>
+        <member name="M:SSheBei.Model.ResultModel.SetValue(System.Boolean,System.String)">
+            <summary>
+            设置返回的参数
+            </summary>
+            <param name="issuccess">是否成功</param>
+            <param name="msg">消息</param>
+        </member>
+        <member name="M:SSheBei.Model.ResultModel.SetValue(System.Boolean,System.String,System.Byte[])">
+            <summary>
+            设置返回的参数
+            </summary>
+            <param name="issuccess">是否成功</param>
+            <param name="msg">消息</param>
+            <param name="tData">数据</param>
+        </member>
+        <member name="M:SSheBei.Model.ResultModel.SetValue(System.Byte[])">
+            <summary>
+            设置数据
+            </summary>
+            <param name="tData">返回的数据</param>
+        </member>
+        <member name="T:SSheBei.Model.SetLianJieQiModel">
+            <summary>
+            连接器的设置Model
+            </summary>
+        </member>
+        <member name="P:SSheBei.Model.SetLianJieQiModel.IPOrCOMStr">
+            <summary>
+            ip与串口
+            </summary>
+        </member>
+        <member name="P:SSheBei.Model.SetLianJieQiModel.SpeedOrPort">
+            <summary>
+            波特率与端口号
+            </summary>
+        </member>
+        <member name="T:SSheBei.Model.SheBeiZuType">
+            <summary>
+            设备组
+            </summary>
+        </member>
+        <member name="F:SSheBei.Model.SheBeiZuType.无组">
+            <summary>
+            无阻
+            </summary>
+        </member>
+        <member name="F:SSheBei.Model.SheBeiZuType.一组">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:SSheBei.Model.SheBeiZuType.二组">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:SSheBei.Model.SheBeiZuType.三组">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:SSheBei.Model.SheBeiZuType.四组">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:SSheBei.Model.SheBeiZuType.五组">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:SSheBei.Model.SheBeiZuType.六组">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:SSheBei.Model.SheBeiZuType.七组">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:SSheBei.Model.SheBeiZuType.八组">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:SSheBei.Model.XieRuMolde">
+            <summary>
+            用于写入的参数
+            </summary>
+        </member>
+        <member name="P:SSheBei.Model.XieRuMolde.JiCunQiWeiYiBiaoShi">
+            <summary>
+            寄存器的唯一标识
+            </summary>
+        </member>
+        <member name="P:SSheBei.Model.XieRuMolde.SheBeiID">
+            <summary>
+            设备的ID
+            </summary>
+        </member>
+        <member name="P:SSheBei.Model.XieRuMolde.Zhi">
+            <summary>
+            写入的值
+            </summary>
+        </member>
+        <member name="M:SSheBei.Model.XieRuMolde.FuZhi">
+            <summary>
+            复制一个副本
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:SSheBei.Model.TxModel">
+            <summary>
+            通信状态数据
+            </summary>
+        </member>
+        <member name="P:SSheBei.Model.TxModel.SheBeiTD">
+            <summary>
+            设备id
+            </summary>
+        </member>
+        <member name="P:SSheBei.Model.TxModel.SheBeiName">
+            <summary>
+            设备名称
+            </summary>
+        </member>
+        <member name="P:SSheBei.Model.TxModel.SheBeuZu">
+            <summary>
+            设备组
+            </summary>
+        </member>
+        <member name="P:SSheBei.Model.TxModel.IsXuYaoPanDuan">
+            <summary>
+            true需要判断
+            </summary>
+        </member>
+        <member name="P:SSheBei.Model.TxModel.ZongTX">
+            <summary>
+            true 表示所有通讯成功
+            </summary>
+        </member>
+        <member name="P:SSheBei.Model.TxModel.LisTx">
+            <summary>
+            子设备通信状态
+            </summary>
+        </member>
+        <member name="T:SSheBei.Model.ZiTxModel">
+            <summary>
+            子设备通信名称
+            </summary>
+        </member>
+        <member name="P:SSheBei.Model.ZiTxModel.ZiSheBeiID">
+            <summary>
+            子设备ID
+            </summary>
+        </member>
+        <member name="P:SSheBei.Model.ZiTxModel.ZiSheBeiName">
+            <summary>
+            子设备名称
+            </summary>
+        </member>
+        <member name="P:SSheBei.Model.ZiTxModel.Tx">
+            <summary>
+            true 通信成功
+            </summary>
+        </member>
+        <member name="T:SSheBei.PeiZhi.JieMianPeiZhiLei">
+            <summary>
+            界面配置用的
+            </summary>
+        </member>
+        <member name="F:SSheBei.PeiZhi.JieMianPeiZhiLei.SheBeis">
+            <summary>
+            设备
+            </summary>
+        </member>
+        <member name="M:SSheBei.PeiZhi.JieMianPeiZhiLei.IniChuShiHua(SSheBei.Model.JiaZaiSheBeiModel)">
+            <summary>
+            初始化数据
+            </summary>
+        </member>
+        <member name="M:SSheBei.PeiZhi.JieMianPeiZhiLei.GetSheBeiType">
+            <summary>
+            获取设备类型
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SSheBei.PeiZhi.JieMianPeiZhiLei.GetBanBen(System.String)">
+            <summary>
+            获取设备的版本号
+            </summary>
+            <param name="type"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SSheBei.PeiZhi.JieMianPeiZhiLei.GetSheBeiWenJianName">
+            <summary>
+            加载文件
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SSheBei.PeiZhi.JieMianPeiZhiLei.GetJieMian(System.String,System.String)">
+            <summary>
+            获取配置界面
+            </summary>
+            <param name="shebeitype"></param>
+            <param name="peizhiobjname"></param>
+            <returns></returns>
+        </member>
+        <member name="T:SSheBei.PeiZhi.MoRenKJ">
+            <summary>
+            默认KJ
+            </summary>
+        </member>
+        <member name="M:SSheBei.PeiZhi.MoRenKJ.#ctor">
+            <summary>
+            默认参数KJ
+            </summary>
+        </member>
+        <member name="M:SSheBei.PeiZhi.MoRenKJ.GetCanShu">
+            <summary>
+            获取参数
+            </summary>
+            <returns></returns>
+            <exception cref="T:System.NotImplementedException"></exception>
+        </member>
+        <member name="M:SSheBei.PeiZhi.MoRenKJ.GetPeiZhiKJ(System.String)">
+            <summary>
+            加载控件
+            </summary>
+            <param name="jicunqibiaoshi"></param>
+            <returns></returns>
+            <exception cref="T:System.NotImplementedException"></exception>
+        </member>
+        <member name="M:SSheBei.PeiZhi.MoRenKJ.SetCanShu(System.String)">
+            <summary>
+            设置参数
+            </summary>
+            <param name="canshu"></param>
+            <exception cref="T:System.NotImplementedException"></exception>
+        </member>
+        <member name="F:SSheBei.PeiZhi.MoRenKJ.components">
+            <summary> 
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:SSheBei.PeiZhi.MoRenKJ.Dispose(System.Boolean)">
+            <summary> 
+            清理所有正在使用的资源。
+            </summary>
+            <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+        </member>
+        <member name="M:SSheBei.PeiZhi.MoRenKJ.InitializeComponent">
+            <summary> 
+            设计器支持所需的方法 - 不要修改
+            使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="T:SSheBei.PeiZhi.PeiZhiKJ">
+            <summary>
+            配置的控件
+            </summary>
+        </member>
+        <member name="M:SSheBei.PeiZhi.PeiZhiKJ.#ctor">
+            <summary>
+            配置控件
+            </summary>
+        </member>
+        <member name="M:SSheBei.PeiZhi.PeiZhiKJ.Clear">
+            <summary>
+            清理
+            </summary>
+        </member>
+        <member name="M:SSheBei.PeiZhi.PeiZhiKJ.GetModel">
+            <summary>
+            获取参数
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SSheBei.PeiZhi.PeiZhiKJ.GetSunXu">
+            <summary>
+            获取排血
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SSheBei.PeiZhi.PeiZhiKJ.SetCanShu(SSheBei.Model.JiaZaiSheBeiModel)">
+            <summary>
+            设置参数
+            </summary>
+            <param name="canshu"></param>
+        </member>
+        <member name="M:SSheBei.PeiZhi.PeiZhiKJ.SetSunXu(System.Int32)">
+            <summary>
+            设置顺序
+            </summary>
+            <param name="sunxu"></param>
+        </member>
+        <member name="M:SSheBei.PeiZhi.PeiZhiKJ.QiDongTiShiKuang(System.String,System.Int32)">
+            <summary>
+            启动默认提示框，默认是5秒
+            </summary>
+            <param name="msg"></param>    
+            <param name="shijian"></param>
+            <returns></returns>
+        </member>
+        <member name="F:SSheBei.PeiZhi.PeiZhiKJ.components">
+            <summary> 
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:SSheBei.PeiZhi.PeiZhiKJ.Dispose(System.Boolean)">
+            <summary> 
+            清理所有正在使用的资源。
+            </summary>
+            <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+        </member>
+        <member name="M:SSheBei.PeiZhi.PeiZhiKJ.InitializeComponent">
+            <summary> 
+            设计器支持所需的方法 - 不要修改
+            使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="T:SSheBei.PeiZhi.XuanZeJiCunQiFrm">
+            <summary>
+            选择读写寄存器
+            </summary>
+        </member>
+        <member name="P:SSheBei.PeiZhi.XuanZeJiCunQiFrm.JiCunQiWeiYiBiaoShi">
+            <summary>
+            获取寄存器唯一标识
+            </summary>
+        </member>
+        <member name="P:SSheBei.PeiZhi.XuanZeJiCunQiFrm.SheBeiID">
+            <summary>
+            设备的id
+            </summary>
+        </member>
+        <member name="M:SSheBei.PeiZhi.XuanZeJiCunQiFrm.#ctor">
+            <summary>
+            选择
+            </summary>
+        </member>
+        <member name="M:SSheBei.PeiZhi.XuanZeJiCunQiFrm.GuanBi">
+            <summary>
+            关闭
+            </summary>
+        </member>
+        <member name="M:SSheBei.PeiZhi.XuanZeJiCunQiFrm.SetCanShu(System.String,System.Int32,System.Int32)">
+            <summary>
+            1  是读寄存器 2是写寄存器 3是选择全部
+            </summary>
+            <param name="jicunqiweiyibiaoshi"></param>
+            <param name="shebeiid"></param>
+            <param name="leixing"></param>
+        </member>
+        <member name="M:SSheBei.PeiZhi.XuanZeJiCunQiFrm.IniChuShiHua(System.Int32)">
+            <summary>
+            初始化数据
+            </summary>
+        </member>
+        <member name="F:SSheBei.PeiZhi.XuanZeJiCunQiFrm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:SSheBei.PeiZhi.XuanZeJiCunQiFrm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:SSheBei.PeiZhi.XuanZeJiCunQiFrm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:SSheBei.ZongKongZhi.ZongSheBeiKongZhi">
+            <summary>
+            总设备控制类
+            </summary>
+        </member>
+        <member name="F:SSheBei.ZongKongZhi.ZongSheBeiKongZhi.KaiGuan">
+            <summary>
+            true  表示开启
+            </summary>
+        </member>
+        <member name="F:SSheBei.ZongKongZhi.ZongSheBeiKongZhi.ZongSheBeis">
+            <summary>
+            总线集合
+            </summary>
+        </member>
+        <member name="E:SSheBei.ZongKongZhi.ZongSheBeiKongZhi.ZongXianMsgEvnt">
+            <summary>
+            总线里的消息
+            </summary>
+        </member>
+        <member name="M:SSheBei.ZongKongZhi.ZongSheBeiKongZhi.Cerate">
+            <summary>
+            单例类，
+            </summary>
+            <returns>返回NewXieRiZhiLog</returns>
+        </member>
+        <member name="M:SSheBei.ZongKongZhi.ZongSheBeiKongZhi.IniChuShiHua">
+            <summary>
+            初始化数据
+            </summary>
+        </member>
+        <member name="M:SSheBei.ZongKongZhi.ZongSheBeiKongZhi.Open">
+            <summary>
+            打开数据
+            </summary>
+        </member>
+        <member name="M:SSheBei.ZongKongZhi.ZongSheBeiKongZhi.Close">
+            <summary>
+            关闭数据
+            </summary>
+        </member>
+        <member name="M:SSheBei.ZongKongZhi.ZongSheBeiKongZhi.GetShuJu">
+            <summary>
+            获取数据
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SSheBei.ZongKongZhi.ZongSheBeiKongZhi.GetSheBeiTxState">
+            <summary>
+            获取每个通信状态 key表示设备组
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SSheBei.ZongKongZhi.ZongSheBeiKongZhi.XieCanShu(System.Collections.Generic.List{SSheBei.Model.XieRuMolde})">
+            <summary>
+            写入数据
+            </summary>
+            <param name="canshus"></param>
+        </member>
+        <member name="M:SSheBei.ZongKongZhi.ZongSheBeiKongZhi.XieCanShu(SSheBei.Model.XieRuMolde)">
+            <summary>
+            写入数据
+            </summary>
+            <param name="canshus"></param>
+        </member>
+        <member name="M:SSheBei.ZongKongZhi.ZongSheBeiKongZhi.GetIsChengGong(SSheBei.Model.XieRuMolde)">
+            <summary>
+            返回校验结果
+            </summary>
+            <param name="canshus"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SSheBei.ZongKongZhi.ZongSheBeiKongZhi.GetTiaoShiFrm(System.Int32)">
+            <summary>
+            获取配置调试窗体
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SSheBei.ZongKongZhi.ZongSheBeiKongZhi.GetSheBeiCanShu">
+            <summary>
+            获取设备参数的 有设备id，与名称
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SSheBei.ZongKongZhi.ZongSheBeiKongZhi.GetPeiZhiLisJiCunQi(System.Int32)">
+            <summary>
+            获取配置的读写 1是读 2是写 3是全部
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SSheBei.ZongKongZhi.ZongSheBeiKongZhi.GetPeiZhiJiCunQi(System.Int32,System.Int32)">
+            <summary>
+            获取配置的读写 1是读 2是写 3是全部
+            </summary>
+            <param name="shebid"></param>
+            <param name="type"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SSheBei.ZongKongZhi.ZongSheBeiKongZhi.GetSheBeiName(System.Int32)">
+            <summary>
+            获取设备名称
+            </summary>
+            <param name="shebeiid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SSheBei.ZongKongZhi.ZongSheBeiKongZhi.GetSheBei(System.Int32)">
+            <summary>
+            获取设备
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SSheBei.ZongKongZhi.ZongSheBeiKongZhi.GetPeiZhiJieKou(System.Int32,System.String)">
+            <summary>
+            获取配置控件
+            </summary>
+            <param name="shebeiid"></param>
+            <param name="weiyibiaoshi"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

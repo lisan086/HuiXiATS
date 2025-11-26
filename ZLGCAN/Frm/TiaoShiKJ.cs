@@ -1,0 +1,82 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+using CommLei.JiChuLei;
+using SSheBei.Model;
+using YiBanSaoMaQi.Model;
+
+namespace YiBanSaoMaQi.Frm
+{
+    public partial class TiaoShiKJ : UserControl
+    {
+        private CunType CunType = CunType.XieZlgBuXieZhiDu;
+        private SaoMaModel SheBeiID ;
+        private PeiZhiLei PeiZhiLei;
+        public TiaoShiKJ()
+        {
+            InitializeComponent();
+        }
+        public void SetCanShu(PeiZhiLei peiZhiLei,SaoMaModel sshid)
+        {
+            this.commBoxE1.SetCanShu<CunType>();
+            SheBeiID = sshid;
+            PeiZhiLei =peiZhiLei;
+            
+            if (sshid != null)
+            {
+                this.label2.Text = $"{sshid.Name}";
+                this.label2.BackColor = sshid.TX ? Color.Green : Color.Red;
+            }
+            
+        }
+
+        public void ShuaXin()
+        {
+            this.label2.BackColor = SheBeiID.TX ? Color.Green : Color.Red;
+            CunModel model = PeiZhiLei.DataMoXing.IsChengGong(SheBeiID, CunType);
+            if (model.IsZhengZaiCe == 1)
+            {
+                if (this.textBox1.Text != model.JiCunQi.Value.ToString())
+                {
+                    this.textBox1.Text = model.JiCunQi.Value.ToString();
+                }
+
+            }
+            
+            else if (model.IsZhengZaiCe == 0)
+            {
+                if (this.textBox1.Text !="进行中")
+                {
+                    this.textBox1.Text = "进行中";
+                }
+            }
+            else 
+            {
+                if (this.textBox1.Text != "超时或者不对")
+                {
+                    this.textBox1.Text = "超时或者不对";
+                }
+            }
+        }
+    
+      
+        private void button3_Click(object sender, EventArgs e)
+        {
+            CunType = this.commBoxE1.GetCanShu<CunType>();
+            JiCunQiModel model = PeiZhiLei.DataMoXing.GetModel(SheBeiID.SheBeiID, CunType);
+            model.Value = this.textBox6.Text;
+            PeiZhiLei.XieJiDianQi(model);
+        }
+
+        private void commBoxE1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            this.label3.Text = ChangYong.GetEnumDescription(this.commBoxE1.GetCanShu<CunType>());
+        }
+    }
+}

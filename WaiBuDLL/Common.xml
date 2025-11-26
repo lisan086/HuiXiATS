@@ -1,0 +1,3041 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Common</name>
+    </assembly>
+    <members>
+        <member name="T:Common.DataChuLi.DaoChuTxlxs">
+            <summary>
+            全新的导出XLXS
+            </summary>
+        </member>
+        <member name="M:Common.DataChuLi.DaoChuTxlxs.BaoCunxlxs``1(System.String,System.Collections.Generic.List{``0})">
+            <summary>
+            保存成功返回true
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="filename"></param>
+            <param name="lisdata"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Common.DataChuLi.DaoChuTxlxs.BaoCunZhuiJiaxlxs``1(System.String,``0)">
+            <summary>
+            保存追加成功返回true
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="filename"></param>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Common.DataChuLi.DaoChuTxlxs.DaoChuModel``1(System.String)">
+            <summary>
+            导出对象
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="filename"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Common.DataChuLi.IniGetModelLei`1">
+            <summary>
+            读取model的ini文件,model是单一的没有复合model 也是安全model类
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="P:Common.DataChuLi.IniGetModelLei`1.TexboxPath1">
+            <summary>
+            保存的路径
+            </summary>
+        </member>
+        <member name="M:Common.DataChuLi.IniGetModelLei`1.#ctor(System.String)">
+            <summary>
+            需要传来biaoshi,自动创建路径
+            </summary>
+            <param name="biaoshi"></param>
+        </member>
+        <member name="M:Common.DataChuLi.IniGetModelLei`1.XieTModel(`0)">
+            <summary>
+            写进ini文件
+            </summary>     
+            <param name="model"></param>
+        </member>
+        <member name="M:Common.DataChuLi.IniGetModelLei`1.XieTModel(System.Collections.Generic.List{`0})">
+            <summary>
+            写进ini文件
+            </summary>
+            <param name="model"></param>
+        </member>
+        <member name="M:Common.DataChuLi.IniGetModelLei`1.GetTModel(System.String)">
+            <summary>
+            获取某个key对应的值
+            </summary>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Common.DataChuLi.IniGetModelLei`1.GetTModel">
+            <summary>
+            能获取的对象只能是int flaot string datetime类型的属性对象
+            </summary>        
+            <returns></returns>
+        </member>
+        <member name="M:Common.DataChuLi.IniGetModelLei`1.GetLisTModel">
+            <summary>
+            获取lis的值（inilis的值）
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Common.DataChuLi.IniGetModelLei">
+            <summary>
+            读取model的ini文件,非泛型的
+            </summary>
+        </member>
+        <member name="P:Common.DataChuLi.IniGetModelLei.TexboxPath1">
+            <summary>
+            保存的路径
+            </summary>
+        </member>
+        <member name="M:Common.DataChuLi.IniGetModelLei.#ctor(System.String)">
+            <summary>
+            需要传来biaoshi,自动创建路径
+            </summary>
+            <param name="biaoshi"></param>
+        </member>
+        <member name="M:Common.DataChuLi.IniGetModelLei.XieTModel``1(``0)">
+            <summary>
+            写进ini文件
+            </summary>     
+            <param name="model"></param>
+        </member>
+        <member name="M:Common.DataChuLi.IniGetModelLei.XieTModel``1(System.Collections.Generic.List{``0})">
+            <summary>
+            写进ini文件
+            </summary>
+            <param name="model"></param>
+        </member>
+        <member name="M:Common.DataChuLi.IniGetModelLei.GetTModel(System.String)">
+            <summary>
+            获取某个key对应的值
+            </summary>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Common.DataChuLi.IniGetModelLei.GetTModel``1">
+            <summary>
+            能获取的对象只能是int flaot string datetime类型的属性对象
+            </summary>        
+            <returns></returns>
+        </member>
+        <member name="M:Common.DataChuLi.IniGetModelLei.GetLisTModel``1">
+            <summary>
+            获取lis的值（inilis的值）
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Common.DataChuLi.JieKouJiaZaiLei`1">
+            <summary>
+            加载接口用的
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="M:Common.DataChuLi.JieKouJiaZaiLei`1.JiaZaiLisT(System.String)">
+            <summary>
+            加载接口，需要目录
+            </summary>
+            <param name="MuLu"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Common.DataChuLi.JieKouJiaZaiLei`1.JiaZaiLisType(System.String)">
+            <summary>
+            加载接口type类型，需要目录
+            </summary>
+            <param name="MuLu"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Common.DataChuLi.JieKouJiaZaiLei`1.JiaZaiLisType(System.String,System.Collections.Generic.List{System.String})">
+            <summary>
+            加载接口type类型，需要目录,可以过滤的文件
+            </summary>
+            <param name="MuLu"></param>
+            <param name="xuyaoyongdewenjian"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Common.DataChuLi.JieKouJiaZaiLei`1.JiaZaiXuYaoType(System.String,System.Collections.Generic.List{System.String})">
+            <summary>
+            加载接口type类型，需要目录,可以过滤的文件,返回的是每个文件对应的实现Type
+            </summary>
+            <param name="MuLu"></param>
+            <param name="xuyaoyongdewenjian"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Common.DataChuLi.JieKouJiaZaiLei`1.JiaZaiLisT(System.Collections.Generic.List{System.String})">
+            <summary>
+            通过传来的文件来实现接口
+            </summary>
+            <param name="lisfilename"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Common.DataChuLi.JosnOrModel">
+            <summary>
+            提供josn文件转对象,单线程改的,不能用于实时刷新,高速下有问题
+            </summary>
+        </member>
+        <member name="F:Common.DataChuLi.JosnOrModel.FilePath">
+            <summary>
+            文件路径
+            </summary>
+        </member>
+        <member name="M:Common.DataChuLi.JosnOrModel.#ctor(System.String)">
+            <summary>
+            需要传来路径
+            </summary>
+            <param name="path"></param>
+        </member>
+        <member name="M:Common.DataChuLi.JosnOrModel.XieTModel``1(``0)">
+            <summary>
+            写进ini文件
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="model"></param>
+        </member>
+        <member name="M:Common.DataChuLi.JosnOrModel.XieTModel``1(System.Collections.Generic.List{``0})">
+            <summary>
+            写进ini文件
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="model"></param>
+        </member>
+        <member name="M:Common.DataChuLi.JosnOrModel.GetTModel``1">
+            <summary>
+            能获取的对象只能是int flaot string datetime类型的属性对象
+            </summary>
+            <typeparam name="T"></typeparam>
+            <returns></returns>
+        </member>
+        <member name="M:Common.DataChuLi.JosnOrModel.GetLisTModel``1">
+            <summary>
+            获取lis的值（inilis的值）
+            </summary>
+            <typeparam name="T"></typeparam>
+            <returns></returns>
+        </member>
+        <member name="M:Common.DataChuLi.JosnOrModel.ShanChuWenJian">
+            <summary>
+            删除文件
+            </summary>
+        </member>
+        <member name="T:Common.DataChuLi.PeiFangDanChuLi`1">
+            <summary>
+            用于单个对象处理配方
+            </summary>
+        </member>
+        <member name="P:Common.DataChuLi.PeiFangDanChuLi`1.XuYaoModel">
+            <summary>
+            需要的model
+            </summary>
+        </member>
+        <member name="F:Common.DataChuLi.PeiFangDanChuLi`1.WenJianLuJing">
+            <summary>
+            文件名
+            </summary>
+        </member>
+        <member name="F:Common.DataChuLi.PeiFangDanChuLi`1.PeiFangLuJing">
+            <summary>
+            配方路径
+            </summary>
+        </member>
+        <member name="M:Common.DataChuLi.PeiFangDanChuLi`1.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:Common.DataChuLi.PeiFangDanChuLi`1.GetPeiFang(System.Boolean)">
+            <summary>
+            获取配方名 true获取配方名 false获取配方路径
+            </summary>
+            <param name="ispeifangname"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Common.DataChuLi.PeiFangDanChuLi`1.SetDanQianBaoPeiFang">
+            <summary>
+            设置当前配方 
+            </summary>     
+            <returns></returns>
+        </member>
+        <member name="M:Common.DataChuLi.PeiFangDanChuLi`1.JiaZaiPeiFang">
+            <summary>
+            加载配方
+            </summary>     
+        </member>
+        <member name="M:Common.DataChuLi.PeiFangDanChuLi`1.BaoCun(System.String)">
+            <summary>
+            没有保存路径的文件名
+            </summary>
+            <param name="meiyoushiname"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Common.DataChuLi.PeiFangDanChuLi`1.Close">
+            <summary>
+            释放资源
+            </summary>
+        </member>
+        <member name="T:Common.DataChuLi.PeiFangLisChuLi`1">
+            <summary>
+            用于多个对象处理配方
+            </summary>
+        </member>
+        <member name="P:Common.DataChuLi.PeiFangLisChuLi`1.XuYaoModel">
+            <summary>
+            需要的model
+            </summary>
+        </member>
+        <member name="F:Common.DataChuLi.PeiFangLisChuLi`1.WenJianLuJing">
+            <summary>
+            文件名
+            </summary>
+        </member>
+        <member name="F:Common.DataChuLi.PeiFangLisChuLi`1.PeiFangLuJing">
+            <summary>
+            配方路径
+            </summary>
+        </member>
+        <member name="M:Common.DataChuLi.PeiFangLisChuLi`1.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:Common.DataChuLi.PeiFangLisChuLi`1.GetPeiFang(System.Boolean)">
+            <summary>
+            获取配方名 true获取配方名 false获取配方路径
+            </summary>
+            <param name="ispeifangname"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Common.DataChuLi.PeiFangLisChuLi`1.SetDanQianBaoPeiFang">
+            <summary>
+            设置当前配方 
+            </summary>     
+            <returns></returns>
+        </member>
+        <member name="M:Common.DataChuLi.PeiFangLisChuLi`1.JiaZaiPeiFang">
+            <summary>
+            加载配方
+            </summary>     
+        </member>
+        <member name="M:Common.DataChuLi.PeiFangLisChuLi`1.BaoCun(System.String)">
+            <summary>
+            没有保存路径的文件名
+            </summary>
+            <param name="meiyoushiname"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Common.DataChuLi.PeiFangLisChuLi`1.Close">
+            <summary>
+            释放资源
+            </summary>
+        </member>
+        <member name="T:Common.DataChuLi.PeiFangXuanZeModel">
+            <summary>
+            选择那个路径的参数
+            </summary>
+        </member>
+        <member name="P:Common.DataChuLi.PeiFangXuanZeModel.LuJin">
+            <summary>
+            路径名
+            </summary>
+        </member>
+        <member name="T:Common.DataChuLi.ReadOrWriteIni">
+            <summary>
+            读取ini文件
+            </summary>
+        </member>
+        <member name="F:Common.DataChuLi.ReadOrWriteIni.path">
+            <summary>
+            路径
+            </summary>
+        </member>
+        <member name="P:Common.DataChuLi.ReadOrWriteIni.Path">
+            <summary>
+            文件路径
+            </summary>
+        </member>
+        <member name="M:Common.DataChuLi.ReadOrWriteIni.#ctor">
+            <summary>
+            空的配置文档，需要定义属性Path
+            </summary>
+        </member>
+        <member name="M:Common.DataChuLi.ReadOrWriteIni.#ctor(System.String)">
+            <summary>
+            需要传入路径
+            </summary>
+            <param name="path1">文件存放路径</param>
+        </member>
+        <member name="M:Common.DataChuLi.ReadOrWriteIni.#ctor(System.String,System.Int32)">
+            <summary>
+            需要传入路径
+            </summary>
+            <param name="path1">文件存放路径</param>
+            <param name="daxiao">文件存放大小</param> 
+        </member>
+        <member name="M:Common.DataChuLi.ReadOrWriteIni.#ctor(System.String,System.Boolean)">
+            <summary>
+            需要传入路径
+            </summary>
+            <param name="path1">文件存放路径</param>
+            <param name="iszhineng">智能算法</param> 
+        </member>
+        <member name="M:Common.DataChuLi.ReadOrWriteIni.WriteIni(System.String,System.String,System.String)">
+            <summary>
+            写入的参数
+            </summary>
+            <param name="section">大标题</param>
+            <param name="key">键值索引</param>
+            <param name="val">键值</param>
+            <returns></returns>
+        </member>
+        <member name="M:Common.DataChuLi.ReadOrWriteIni.WriteIni(System.String,System.String,System.Boolean)">
+            <summary>
+            写入的参数
+            </summary>
+            <param name="section">大标题</param>
+            <param name="key">键值索引</param>
+            <param name="val">键值</param>
+            <returns></returns>
+        </member>
+        <member name="M:Common.DataChuLi.ReadOrWriteIni.WriteIni(System.String,System.String,System.Int32)">
+            <summary>
+            写入的参数
+            </summary>
+            <param name="section">大标题</param>
+            <param name="key">键值索引</param>
+            <param name="val">键值</param>
+            <returns></returns>
+        </member>
+        <member name="M:Common.DataChuLi.ReadOrWriteIni.WriteIni(System.String,System.String,System.Single)">
+            <summary>
+            写入的参数
+            </summary>
+            <param name="section">大标题</param>
+            <param name="key">键值索引</param>
+            <param name="val">键值</param>
+            <returns></returns>
+        </member>
+        <member name="M:Common.DataChuLi.ReadOrWriteIni.ReadIni(System.String,System.String)">
+            <summary>
+            读取配置文件，返回一个string类型的键值
+            </summary>
+            <param name="section">大标题</param>
+            <param name="key">键值索引</param>
+            <returns>返回一个string类型的键值</returns>
+        </member>
+        <member name="M:Common.DataChuLi.ReadOrWriteIni.ReadByte(System.String,System.String)">
+            <summary>
+            读取ini文件变成byte数据
+            </summary>
+            <param name="section"></param>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Common.DataChuLi.ReadOrWriteIni.RomveMouGeKey(System.String,System.String)">
+            <summary>
+            删除某段落的某节点，
+            </summary>
+            <param name="section">段落</param>
+            <param name="key">某个节点</param>
+        </member>
+        <member name="M:Common.DataChuLi.ReadOrWriteIni.RomveSection(System.String)">
+            <summary>
+            删除父节点，不保留section
+            </summary>
+            <param name="section"></param>
+        </member>
+        <member name="M:Common.DataChuLi.ReadOrWriteIni.RomveFilterSection(System.String)">
+            <summary>
+            移除所有还有section
+            </summary>
+            <param name="filtersection"></param>
+        </member>
+        <member name="M:Common.DataChuLi.ReadOrWriteIni.RomveQuanBuKey(System.String)">
+            <summary>
+            删除某段落的某节点，保留section
+            </summary>
+            <param name="section">段落</param>       
+        </member>
+        <member name="M:Common.DataChuLi.ReadOrWriteIni.GetSectionSuoYouKeyZhi(System.String)">
+            <summary>
+            获取section下的所有key值
+            </summary>
+            <param name="section"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Common.DataChuLi.ReadOrWriteIni.GetSuoYouSection">
+            <summary>
+            获取所有section值
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Common.DataChuLi.ReadOrWriteIni.GetFilteSectionKeyValue(System.String)">
+            <summary>
+            找到与Filtesection一样的所有KeyValue值
+            </summary>
+            <param name="Filtesection"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Common.DataChuLi.SerialDaiChangDuDataJieXi">
+            <summary>
+            解析带长度数据
+            </summary>
+        </member>
+        <member name="F:Common.DataChuLi.SerialDaiChangDuDataJieXi._ShuJu">
+            <summary>
+            接收数据的存储
+            </summary>
+        </member>
+        <member name="F:Common.DataChuLi.SerialDaiChangDuDataJieXi._LisDataByte">
+            <summary>
+            获取的解析出来的数据集合
+            </summary>
+        </member>
+        <member name="M:Common.DataChuLi.SerialDaiChangDuDataJieXi.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="P:Common.DataChuLi.SerialDaiChangDuDataJieXi.DataCount">
+            <summary>
+            数据多少
+            </summary>
+        </member>
+        <member name="M:Common.DataChuLi.SerialDaiChangDuDataJieXi.GetShiShiData">
+            <summary>
+            获取当前数据，就是实时数据,移除以前的
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Common.DataChuLi.SerialDaiChangDuDataJieXi.GetHeadAndRomveData">
+            <summary>
+            从开头获取数据，移除首次
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Common.DataChuLi.SerialDaiChangDuDataJieXi.AddByteList(System.Byte[])">
+            <summary>
+            增加串口返回的数据
+            </summary>
+            <param name="bytearr">数据源</param>
+        </member>
+        <member name="M:Common.DataChuLi.SerialDaiChangDuDataJieXi.AddByte(System.Byte)">
+            <summary>
+            增加单个数据
+            </summary>
+            <param name="byt">单个数据</param>
+        </member>
+        <member name="M:Common.DataChuLi.SerialDaiChangDuDataJieXi.Clear">
+             <summary>
+            清理数据
+             </summary>
+        </member>
+        <member name="M:Common.DataChuLi.SerialDaiChangDuDataJieXi.JieXiWanMeiData(System.Collections.Generic.List{System.Byte},System.Collections.Generic.Dictionary{System.Int32,System.Byte},System.Int32,System.Int32,System.Boolean,System.Func{System.Collections.Generic.List{System.Byte},System.Boolean})">
+            <summary>
+            完美解析
+            </summary>
+            <param name="qianduanjuku"></param>
+            <param name="jingeshu"></param>
+            <param name="shujuchangdu"></param>
+            <param name="tezhengfu"></param>
+            <param name="shifoujiaoyan"></param>
+            <param name="jiaoyanhanshu"></param>
+        </member>
+        <member name="T:Common.DataChuLi.SuiJiShuLei">
+            <summary>
+            随机数产生
+            </summary>
+        </member>
+        <member name="M:Common.DataChuLi.SuiJiShuLei.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:Common.DataChuLi.SuiJiShuLei.GetShuJuInt(System.Int32[])">
+            <summary>
+            获取随机数整型
+            </summary>
+            <param name="DataSuoce">数据源</param>
+            <returns>返回数据源中一个</returns>
+        </member>
+        <member name="M:Common.DataChuLi.SuiJiShuLei.GetShuJuFloat(System.Single[])">
+            <summary>
+             获取随机数单精度
+            </summary>
+            <param name="DataSuoce">数据源</param>
+            <returns>返回数据源中一个</returns>
+        </member>
+        <member name="M:Common.DataChuLi.SuiJiShuLei.GetShuJuT``1(System.Collections.Generic.List{``0})">
+            <summary>
+            泛型随机数
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="LisT"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Common.DataChuLi.SuiJiShuLei.ChuXian1GaiLv(System.Double)">
+             <summary>
+            概率数据精确到0到100,精确度有0.001,出现时为true，没出现时为false
+             </summary>
+             <returns></returns>
+        </member>
+        <member name="M:Common.DataChuLi.SuiJiShuLei.SuiJiData(System.Int32,System.Int32)">
+            <summary>
+            随机值，不包含最大数
+            </summary>
+            <param name="zuixiaoshu"></param>
+            <param name="zuidashju"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Common.DataChuLi.SuiJiShuLei.GetRandomNumber(System.Double,System.Double,System.Int32)">
+            <summary>
+            随机生成的小数 Len 表示保留多少小数
+            </summary>
+            <param name="minimum"></param>
+            <param name="maximum"></param>
+            <param name="Len"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Common.DataChuLi.XiaoXinSQLDB`1">
+            <summary>
+            用于小型数据库
+            </summary>
+        </member>
+        <member name="M:Common.DataChuLi.XiaoXinSQLDB`1.Ceratei">
+            <summary>
+            单例类，必须KaiqiRiZhi设置为True才能写日志
+            </summary>
+            <returns>返回NewXieRiZhiLog</returns>
+        </member>
+        <member name="M:Common.DataChuLi.XiaoXinSQLDB`1.Add(`0)">
+            <summary>
+            增加数据
+            </summary>       
+        </member>
+        <member name="M:Common.DataChuLi.XiaoXinSQLDB`1.Close">
+            <summary>
+            关闭的方法
+            </summary>
+        </member>
+        <member name="M:Common.DataChuLi.XiaoXinSQLDB`1.GetShuJu">
+             <summary>
+            获取数据
+             </summary>
+             <returns></returns>
+        </member>
+        <member name="T:Common.DataChuLi.ZhuCheLei">
+            <summary>
+            校验注册
+            </summary>
+        </member>
+        <member name="P:Common.DataChuLi.ZhuCheLei.GuoQi">
+            <summary>
+            0表示不过 1表示过
+            </summary>
+        </member>
+        <member name="M:Common.DataChuLi.ZhuCheLei.Ceratei">
+            <summary>
+            单例类，必须KaiqiRiZhi设置为True才能写日志
+            </summary>
+            <returns>返回NewXieRiZhiLog</returns>
+        </member>
+        <member name="M:Common.DataChuLi.ZhuCheLei.BaoCun(System.String)">
+            <summary>
+            保存用时
+            </summary>
+            <param name="yongshi"></param>
+        </member>
+        <member name="M:Common.DataChuLi.ZhuCheLei.Close">
+            <summary>
+            关闭的方法
+            </summary>
+        </member>
+        <member name="M:Common.DataChuLi.ZhuCheLei.ZhuCeShiJian(System.String,System.String,System.String)">
+            <summary>
+            注册
+            </summary>
+            <param name="xiaoshi"></param>
+            <param name="shijian"></param>
+             <param name="iszhengshi"></param>
+        </member>
+        <member name="T:Common.DataChuLi.ZhuCeModel">
+            <summary>
+            检验注册的参数
+            </summary>
+        </member>
+        <member name="P:Common.DataChuLi.ZhuCeModel.ZonTime">
+            <summary>
+            总时间(以小时为单位)
+            </summary>
+        </member>
+        <member name="P:Common.DataChuLi.ZhuCeModel.XianZhiRiQi">
+            <summary>
+            限制日期
+            </summary>
+        </member>
+        <member name="P:Common.DataChuLi.ZhuCeModel.YongTime">
+            <summary>
+            总时间(以小时为单位)
+            </summary>
+        </member>
+        <member name="P:Common.DataChuLi.ZhuCeModel.DianNaoMAC">
+            <summary>
+            电脑的mac吗
+            </summary>
+        </member>
+        <member name="P:Common.DataChuLi.ZhuCeModel.IsZongZhuCe">
+            <summary>
+            是否总注册 
+            </summary>
+        </member>
+        <member name="P:Common.DataChuLi.ZhuCeModel.SCBiaoZhi">
+            <summary>
+            首次标志
+            </summary>
+        </member>
+        <member name="T:Common.HttpFanWen.GengXinQi">
+            <summary>
+            更新器的参数
+            </summary>
+        </member>
+        <member name="P:Common.HttpFanWen.GengXinQi.WanZhi">
+            <summary>
+            访问网址
+            </summary>
+        </member>
+        <member name="P:Common.HttpFanWen.GengXinQi.YuYanQieHuan">
+            <summary>
+            1为中文
+            </summary>
+        </member>
+        <member name="P:Common.HttpFanWen.GengXinQi.JingYong">
+            <summary>
+            1表示禁用更新
+            </summary>
+        </member>
+        <member name="P:Common.HttpFanWen.GengXinQi.GengXinBiaoZhi">
+            <summary>
+            更新标志  由软件控制
+            </summary>
+        </member>
+        <member name="P:Common.HttpFanWen.GengXinQi.IsXuYaoDengLu">
+            <summary>
+            1表示需要登录
+            </summary>
+        </member>
+        <member name="T:Common.HttpFanWen.InBaseModel">
+            <summary>
+            http请求的父类参数
+            </summary>
+        </member>
+        <member name="P:Common.HttpFanWen.InBaseModel.JKName">
+            <summary>
+            接口名称,每个都有接口名称了
+             </summary>
+        </member>
+        <member name="P:Common.HttpFanWen.InBaseModel.IsShiYong">
+            <summary>
+            接口是否使用
+             </summary>
+        </member>
+        <member name="M:Common.HttpFanWen.InBaseModel.#ctor">
+            <summary>
+            实例化
+            </summary>
+        </member>
+        <member name="T:Common.HttpFanWen.HttpQingQiuLei">
+            <summary>
+            这是客户端调用的类
+            </summary>
+        </member>
+        <member name="F:Common.HttpFanWen.HttpQingQiuLei._Model">
+            <summary>
+            http请求参数
+            </summary>
+        </member>
+        <member name="P:Common.HttpFanWen.HttpQingQiuLei._Cookie">
+            <summary>
+            请求的Cookie;
+            </summary>
+        </member>
+        <member name="F:Common.HttpFanWen.HttpQingQiuLei.ShuJuDaXiao">
+            <summary>
+            数据的大小
+            </summary>
+        </member>
+        <member name="M:Common.HttpFanWen.HttpQingQiuLei.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:Common.HttpFanWen.HttpQingQiuLei.Cerate">
+            <summary>
+            单例类，必须KaiqiRiZhi设置为True才能写日志
+            </summary>
+            <returns>返回NewXieRiZhiLog</returns>
+        </member>
+        <member name="M:Common.HttpFanWen.HttpQingQiuLei.QiuQiuHttp``2(``0,System.Boolean)">
+            <summary>
+            非文件的请求 true 表示服务端传大量数据
+            </summary>
+            <typeparam name="T"></typeparam>
+            <typeparam name="V"></typeparam>
+            <param name="model"></param>
+            <param name="shifouxiazaidawenjian"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Common.HttpFanWen.HttpQingQiuLei.ChangChuanWenJin``2(``0,System.Int64,System.Action{System.IO.Stream})">
+            <summary>
+            文件的传输
+            </summary>
+            <param name="model"></param>
+            <param name="len"></param>
+            <param name="ChuangShu"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Common.HttpFanWen.HttpQingQiuLei.CeShuFanHuiString(System.String)">
+            <summary>
+            测试时候用的用于用的
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Common.HttpFanWen.HttpQingQiuLei.SetWanZhi(System.String,System.Int32)">
+            <summary>
+            参考用的
+            </summary>
+        </member>
+        <member name="M:Common.HttpFanWen.HttpQingQiuLei.RequestAndRespone(System.String)">
+            <summary>
+            请求与相应 这是Get请求  和小数据的post请求 请求地址
+            </summary>
+            <param name="srtRequest">网址</param>
+            <returns>返回相应</returns>
+        </member>
+        <member name="M:Common.HttpFanWen.HttpQingQiuLei.ShangChuanShiPing(System.String,System.Int64,System.Action{System.IO.Stream})">
+            <summary>
+            这是上传文件的请求 data表示文件的大小
+            </summary>
+            <param name="srtRequest"></param>
+            <param name="data"></param>
+            <param name="ChuangShu"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Common.HttpFanWen.HttpQingQiuLei.PostQingQiu(System.String,System.String)">
+            <summary>
+            大数据的post请求 srtRequest地址 后面是数据
+            </summary>
+            <param name="srtRequest"></param>
+            <param name="udr"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Common.HttpFanWen.HttpQingQiuLei.RequestXiaZaiWenJian``1(System.String)">
+            <summary>
+            请求与相应
+            </summary>
+            <param name="srtRequest">网址</param>     
+            <returns>返回相应</returns>
+        </member>
+        <member name="P:Common.HttpFanWen.HttpQingQiuLei.HttpRequestModel.RequestMethod">
+            <summary>
+            请求模式，默认为POST
+            </summary>
+        </member>
+        <member name="P:Common.HttpFanWen.HttpQingQiuLei.HttpRequestModel.JieShouMethod">
+            <summary>
+            接收模式，默认为GET
+            </summary>
+        </member>
+        <member name="P:Common.HttpFanWen.HttpQingQiuLei.HttpRequestModel.ContentType">
+            <summary>
+            设置http头标，默认为 "text/xml;charset=utf-8 "
+            </summary>
+        </member>
+        <member name="P:Common.HttpFanWen.HttpQingQiuLei.HttpRequestModel.ContentType1">
+            <summary>
+            设置http头标，默认为 "text/xml;charset=utf-8 "
+            </summary>
+        </member>
+        <member name="P:Common.HttpFanWen.HttpQingQiuLei.HttpRequestModel.EncodWay">
+            <summary>
+            获取返回的编码方式,默认为Encoding.Default
+            </summary>
+        </member>
+        <member name="P:Common.HttpFanWen.HttpQingQiuLei.HttpRequestModel.UserAgent">
+            <summary>
+            请求用户的信息
+            </summary>
+        </member>
+        <member name="P:Common.HttpFanWen.HttpQingQiuLei.HttpRequestModel.Accept">
+            <summary>
+            接收的格式
+            </summary>
+        </member>
+        <member name="P:Common.HttpFanWen.HttpQingQiuLei.HttpRequestModel.StrUri">
+            <summary>
+            q请求的地址
+            </summary>
+        </member>
+        <member name="M:Common.HttpFanWen.HttpQingQiuLei.HttpRequestModel.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="T:Common.HttpFanWen.OutBaseModel`1">
+            <summary>
+            返回的父类
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="P:Common.HttpFanWen.OutBaseModel`1.ChengGong">
+            <summary>
+             接口返回是否成功,成功为true,失败为false
+            </summary>
+        </member>
+        <member name="P:Common.HttpFanWen.OutBaseModel`1.ShuJu">
+            <summary>
+             接口返回的josn数据，如果不是josn数据，就用空model
+            </summary>
+        </member>
+        <member name="P:Common.HttpFanWen.OutBaseModel`1.Msg">
+            <summary>
+            消息
+            </summary>
+        </member>
+        <member name="M:Common.HttpFanWen.OutBaseModel`1.#ctor">
+            <summary>
+             请求返回的内容
+            </summary>
+        </member>
+        <member name="T:Common.HttpFanWen.OutBaseModel">
+            <summary>
+            返回的父类
+            </summary> 
+        </member>
+        <member name="P:Common.HttpFanWen.OutBaseModel.ChengGong">
+            <summary>
+             接口返回是否成功,成功为true,失败为false
+            </summary>
+        </member>
+        <member name="P:Common.HttpFanWen.OutBaseModel.ShuJu">
+            <summary>
+             接口返回的josn数据，如果不是josn数据，就用空model
+            </summary>
+        </member>
+        <member name="P:Common.HttpFanWen.OutBaseModel.Msg">
+            <summary>
+            消息
+            </summary>
+        </member>
+        <member name="M:Common.HttpFanWen.OutBaseModel.#ctor">
+            <summary>
+             请求返回的内容
+            </summary>
+        </member>
+        <member name="T:Common.HttpFanWen.TeXingAttribute">
+            <summary>
+            标记字段是否再用特性
+            </summary>
+        </member>
+        <member name="M:Common.HttpFanWen.TeXingAttribute.#ctor(System.Boolean)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="isshiyong"></param>
+        </member>
+        <member name="M:Common.HttpFanWen.TeXingAttribute.#ctor(System.Boolean,System.String)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="isshiyong"></param>
+            <param name="name"></param>
+        </member>
+        <member name="M:Common.HttpFanWen.TeXingAttribute.GetShiYong">
+            <summary>
+            获取是否使用
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Common.HttpFanWen.TeXingAttribute.GetName">
+            <summary>
+            获取字段名称
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Common.JiChuLei.QingLiNeiCunLei">
+            <summary>
+            清理缓存用的
+            </summary>
+        </member>
+        <member name="M:Common.JiChuLei.QingLiNeiCunLei.QingLi">
+            <summary>
+            清理
+            </summary>
+        </member>
+        <member name="M:Common.JiChuLei.QingLiNeiCunLei.QingLiHuanCun">
+            <summary>
+            清理缓存
+            </summary>
+        </member>
+        <member name="T:Common.JieMianLei.AnEnterJinRuXia">
+            <summary>
+            按下enter进入下一空件
+            </summary>
+        </member>
+        <member name="M:Common.JieMianLei.AnEnterJinRuXia.BangDingAnXiaToKongJian(System.Windows.Forms.Control,System.Windows.Forms.Control)">
+            <summary>
+            绑定按下到另外一个控件
+            </summary>
+        </member>
+        <member name="T:Common.JieMianLei.LieTeXing">
+            <summary>
+            列的特性
+            </summary>
+        </member>
+        <member name="M:Common.JieMianLei.LieTeXing.#ctor(System.Boolean,System.String,System.Int32,System.Int32)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="iskejian"></param>
+            <param name="liename"></param>
+            <param name="dijilie"></param>
+            <param name="mankuan"></param>
+        </member>
+        <member name="M:Common.JieMianLei.LieTeXing.GetKeJian">
+            <summary>
+            true表示可见
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Common.JieMianLei.LieTeXing.GetLieName">
+            <summary>
+            获取显示列名
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Common.JieMianLei.LieTeXing.GetDiJiLie">
+            <summary>
+            获取第几列
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Common.JieMianLei.LieTeXing.GetManKuan">
+            <summary>
+            获取第几列
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Common.SheBeiTeXing.BiaoGeXianShiTeXing">
+            <summary>
+            表格对于集合的显示特性
+            </summary>
+        </member>
+        <member name="M:Common.SheBeiTeXing.BiaoGeXianShiTeXing.#ctor(System.String)">
+            <summary>
+            构造函数用于表格的集合
+            </summary>
+            <param name="value"></param> 
+        </member>
+        <member name="M:Common.SheBeiTeXing.BiaoGeXianShiTeXing.GetValue">
+            <summary>
+            获取值
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Common.SheBeiTeXing.HuoQuSheBeiTeXing">
+            <summary>
+            获取设备特性的类
+            </summary>
+        </member>
+        <member name="M:Common.SheBeiTeXing.HuoQuSheBeiTeXing.GetSheBeiLie``1">
+            <summary>
+            获取model的特性 第一个参数是列 第二个是变量名 第三个是列,第4个表示满宽
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="M:Common.SheBeiTeXing.HuoQuSheBeiTeXing.GetSheBeiXianShi``1">
+            <summary>
+            获取表格显示值的特性 第一个参数是vale，第二个值是 显示值 第三个是变量名
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="T:Common.SheBeiTeXing.SheBeiLieTeXing">
+            <summary>
+            设备导出列的特性
+            </summary>
+        </member>
+        <member name="M:Common.SheBeiTeXing.SheBeiLieTeXing.#ctor(System.Boolean,System.String,System.Int32,System.Int32)">
+            <summary>
+            构造函数用于表格的集合
+            </summary>
+            <param name="iskejian"></param>
+            <param name="liename"></param>
+            <param name="dijilie"></param>
+            <param name="mankuan"></param>
+        </member>
+        <member name="M:Common.SheBeiTeXing.SheBeiLieTeXing.#ctor(System.Boolean,System.String)">
+            <summary>
+            构造函数用于控件
+            </summary>
+            <param name="iskejian"></param>
+            <param name="liename"></param>    
+        </member>
+        <member name="M:Common.SheBeiTeXing.SheBeiLieTeXing.GetKeJian">
+            <summary>
+            true表示可见
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Common.SheBeiTeXing.SheBeiLieTeXing.GetLieName">
+            <summary>
+            获取显示列名
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Common.SheBeiTeXing.SheBeiLieTeXing.GetDiJiLie">
+            <summary>
+            获取第几列
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Common.SheBeiTeXing.SheBeiLieTeXing.GetManKuan">
+            <summary>
+            获取第几列
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Common.Sql.ABSSqlDBLianJie">
+            <summary>
+            数据库的连接
+            </summary>
+        </member>
+        <member name="P:Common.Sql.ABSSqlDBLianJie.SQLType">
+            <summary>
+            数据库类型
+            </summary>
+        </member>
+        <member name="M:Common.Sql.ABSSqlDBLianJie.UpdateOrInsertdate(System.String)">
+            <summary>
+            更新或者增加语句的执行，返回大于0说明更新成功，等于0 表示更新失败 小于0表示服务器没有连接上
+            </summary>
+            <param name="sql"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Common.Sql.ABSSqlDBLianJie.ShiWuUpdate(System.Collections.Generic.List{System.String})">
+            <summary>
+            用于事务更新，返回true表示更新成功，否则失败
+            </summary>
+            <param name="sqllist"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Common.Sql.ABSSqlDBLianJie.GetDataTable(System.String)">
+            <summary>
+            获取Datable,失败则是null
+            </summary>
+            <param name="sql"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Common.Sql.ABSSqlDBLianJie.GetCount(System.String)">
+            <summary>
+            获取一条语句的数量
+            </summary>
+            <param name="sql"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Common.Sql.ABSSqlDBLianJie.UpdateZiDuan(System.String,System.String,System.String,System.Object,System.Object)">
+            <summary>
+            单独更新  返回大于0说明更新成功，等于0 表示更新失败 小于0表示服务器没有连接上
+            </summary>
+            <param name="ziduanming"></param>
+            <param name="biaoming"></param>
+            <param name="tiaojianziduan"></param>
+            <param name="ziduanshuju"></param>
+            <param name="tiaojianshuju"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Common.Sql.ABSSqlDBLianJie.XieRuTuPian(System.Byte[],System.String,System.String,System.String,System.Object)">
+            <summary>
+            写入图片 true表示写入成功
+            </summary>
+            <param name="byteimage"></param>
+            <param name="biaoming"></param>
+            <param name="tiaojianziduanming"></param>
+            <param name="ziduanming"></param>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Common.Sql.ABSSqlDBLianJie.XieRuTuPian(System.Drawing.Image,System.String,System.String,System.String,System.Object)">
+            <summary>
+            写入图片 true表示写入成功
+            </summary>
+            <param name="byteimage"></param>
+            <param name="biaoming"></param>
+            <param name="tiaojianziduanming"></param>
+            <param name="ziduanming"></param>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="E:Common.Sql.ABSSqlDBLianJie._LianJieShuJuXiaoXi">
+            <summary>
+             1表示sql语句，2表示数据库的连接错误消息
+            </summary>
+        </member>
+        <member name="M:Common.Sql.ABSSqlDBLianJie.GenJuSqlChaXunZhi(System.String,System.String)">
+            <summary>
+            根据sql语句查询字段的值，没有返回null
+            </summary>
+            <param name="sql"></param>
+            <param name="ziduan"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Common.Sql.ABSSqlDBLianJie.GenJuSqlChaXunZhi(System.String,System.Collections.Generic.List{System.String})">
+            <summary>
+            根据sql查询一系列的字段的值key为字段，values为值，没有返回null
+            </summary>
+            <param name="sql"></param>
+            <param name="ziduan"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Common.Sql.ABSSqlDBLianJie.GenJuSqlLisChaXunZhi(System.String,System.String)">
+            <summary>
+            根据sql查询一系列的字段的值，没有返回null
+            </summary>
+            <param name="sql"></param>
+            <param name="ziduan"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Common.Sql.ABSSqlDBLianJie.Close">
+            <summary>
+            关闭用的
+            </summary>
+        </member>
+        <member name="T:Common.Sql.LianJieShuJuXiaoXi">
+            <summary>
+            1表示sql语句，2表示数据库的连接错误消息
+            </summary>
+            <param name="msg"></param>
+            <param name="LeiXing"></param>
+        </member>
+        <member name="T:Common.Sql.SQLType">
+            <summary>
+            数据库的类型
+            </summary>
+        </member>
+        <member name="F:Common.Sql.SQLType.MySql">
+            <summary>
+            mysql
+            </summary>
+        </member>
+        <member name="F:Common.Sql.SQLType.SQLSever">
+            <summary>
+            微软自带的sql数据库
+            </summary>
+        </member>
+        <member name="T:Common.Sql.BiaoMingAttribute">
+            <summary>
+            表名特性
+            </summary>
+        </member>
+        <member name="P:Common.Sql.BiaoMingAttribute.IsShiYong">
+            <summary>
+            true表示使用
+            </summary>
+        </member>
+        <member name="P:Common.Sql.BiaoMingAttribute.BiaoName">
+            <summary>
+            表名
+            </summary>
+        </member>
+        <member name="M:Common.Sql.BiaoMingAttribute.#ctor(System.String,System.Boolean)">
+            <summary>
+            表名
+            </summary>
+            <param name="biaoming"></param>
+            <param name="isshiyong"></param>
+        </member>
+        <member name="T:Common.Sql.SQLSeverLianJieQi">
+            <summary>
+            sql访问数据库
+            </summary>
+        </member>
+        <member name="F:Common.Sql.SQLSeverLianJieQi.ConString">
+            <summary>
+            数据库连接
+            </summary>
+        </member>
+        <member name="E:Common.Sql.SQLSeverLianJieQi._LianJieShuJuXiaoXi">
+            <summary>
+            返回的消息
+            </summary>
+        </member>
+        <member name="P:Common.Sql.SQLSeverLianJieQi.SQLType">
+            <summary>
+            访问数据库的类型
+            </summary>
+        </member>
+        <member name="M:Common.Sql.SQLSeverLianJieQi.#ctor">
+            <summary>
+            实例化
+            </summary>
+        </member>
+        <member name="M:Common.Sql.SQLSeverLianJieQi.UpdateOrInsertdate(System.String)">
+            <summary>
+            更新数据库
+            </summary>
+            <param name="sql"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Common.Sql.SQLSeverLianJieQi.ShiWuUpdate(System.Collections.Generic.List{System.String})">
+            <summary>
+            事务的更新
+            </summary>
+            <param name="sqllist"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Common.Sql.SQLSeverLianJieQi.GetDataTable(System.String)">
+            <summary>
+            获取数据库表
+            </summary>
+            <param name="sql"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Common.Sql.SQLSeverLianJieQi.GetCount(System.String)">
+            <summary>
+            返回的数量
+            </summary>
+            <param name="sql"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Common.Sql.SQLSeverLianJieQi.UpdateZiDuan(System.String,System.String,System.String,System.Object,System.Object)">
+            <summary>
+            更新单个字段
+            </summary>
+            <param name="ziduanming"></param>
+            <param name="biaoming"></param>
+            <param name="tiaojianziduan"></param>
+            <param name="ziduanshuju"></param>
+            <param name="tiaojianshuju"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Common.Sql.SQLSeverLianJieQi.XieRuTuPian(System.Byte[],System.String,System.String,System.String,System.Object)">
+            <summary>
+            向数据库写入图片
+            </summary>
+            <param name="byteimage"></param>
+            <param name="biaoming"></param>
+            <param name="tiaojianziduanming"></param>
+            <param name="ziduanming"></param>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Common.Sql.SQLSeverLianJieQi.XieRuTuPian(System.Drawing.Image,System.String,System.String,System.String,System.Object)">
+            <summary>
+            向数据库写入图片
+            </summary>
+            <param name="byteimage"></param>
+            <param name="biaoming"></param>
+            <param name="tiaojianziduanming"></param>
+            <param name="ziduanming"></param>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Common.Sql.SQLSeverLianJieQi.GenJuSqlChaXunZhi(System.String,System.String)">
+            <summary>
+            根据字段名查询最后一个数据，没有就返回为空
+            </summary>
+            <param name="sql"></param>
+            <param name="ziduan"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Common.Sql.SQLSeverLianJieQi.GenJuSqlLisChaXunZhi(System.String,System.String)">
+            <summary>
+            更具字段查询所有的值
+            </summary>
+            <param name="sql"></param>
+            <param name="ziduan"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Common.Sql.SQLSeverLianJieQi.GenJuSqlChaXunZhi(System.String,System.Collections.Generic.List{System.String})">
+            <summary>
+            根据lis字段查询值
+            </summary>
+            <param name="sql"></param>
+            <param name="ziduan"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Common.Sql.SQLSeverLianJieQi.Close">
+            <summary>
+            关闭
+            </summary>
+        </member>
+        <member name="T:Common.Sql.SqlYuJuPingJie">
+            <summary>
+            拼接sql语句
+            </summary>
+        </member>
+        <member name="M:Common.Sql.SqlYuJuPingJie.InsertSql``1(``0)">
+            <summary>
+            特性拼接的sql语句
+            </summary>
+            <typeparam name="T"></typeparam>
+            <returns></returns>
+        </member>
+        <member name="M:Common.Sql.SqlYuJuPingJie.InsertSql(System.Collections.Generic.Dictionary{System.String,System.Object},System.String)">
+            <summary>
+            不是特性的新增
+            </summary>
+            <param name="canshu"></param>
+            <param name="biaoming"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Common.Sql.SqlYuJuPingJie.UpateSql``1(``0)">
+            <summary>
+            特性更新语句
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Common.Sql.SqlYuJuPingJie.UpateSql(System.Collections.Generic.Dictionary{System.String,System.Object},System.Collections.Generic.List{System.String},System.String)">
+            <summary>
+            不是特性更新语句
+            </summary>
+            <param name="genxincanshu"></param>
+            <param name="tiaojian"></param>
+            <param name="biaoming"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Common.Sql.SqlYuJuPingJie.DeleteSql``1(``0)">
+            <summary>
+             删除语句
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Common.Sql.SqlYuJuPingJie.DeleteSql(System.String,System.Collections.Generic.List{System.String})">
+            <summary>
+            删除语句
+            </summary>
+            <param name="BiaoMing">表名</param>
+            <param name="TiaoJian">条件</param>
+            <returns></returns>
+        </member>
+        <member name="M:Common.Sql.SqlYuJuPingJie.ChongJianDelete(System.String)">
+            <summary>
+            删除整个表，并且重塑住建
+            </summary>
+            <param name="BiaoMing"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Common.Sql.SqlYuJuPingJie.SelectSql(System.Collections.Generic.List{System.String},System.String,System.Collections.Generic.List{System.String})">
+            <summary>
+            查询单表语句
+            </summary>
+            <param name="ZiDuanMing">查询字段，没有就查询所有</param>
+            <param name="BiaoMing">表名</param>
+            <param name="TiaoJian">条件</param>
+            <returns></returns>
+        </member>
+        <member name="M:Common.Sql.SqlYuJuPingJie.SelectCount(System.String,System.Collections.Generic.List{System.String})">
+            <summary>
+            查询数量
+            </summary>
+            <param name="BiaoMing">表面</param>
+            <param name="TiaoJian">条件</param>
+            <returns></returns>
+        </member>
+        <member name="M:Common.Sql.SqlYuJuPingJie.SelectSqlTop(System.Int32,System.String,System.Collections.Generic.List{System.String})">
+            <summary>
+            查询表的多少记录带参数的
+            </summary>
+            <param name="julushu"></param>
+            <param name="BiaoMing"></param>
+            <param name="TiaoJianZiDuan"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Common.Sql.SqlYuJuPingJie.SelectSqlDuoBiaoChaXun(System.Collections.Generic.List{System.String},System.Collections.Generic.List{System.String},System.Collections.Generic.List{System.String})">
+            <summary>
+            多表查询
+            </summary>
+            <param name="ZiDuanMing">字段</param>
+            <param name="BiaoMing">多表</param>
+            <param name="TiaoJianZiDuan">条件</param>
+            <returns></returns>
+        </member>
+        <member name="M:Common.Sql.SqlYuJuPingJie.GetBiaoMing``1">
+            <summary>
+            获取表名
+            </summary>
+            <typeparam name="T"></typeparam>
+            <returns></returns>
+        </member>
+        <member name="M:Common.Sql.SqlYuJuPingJie.GetChaXunZiDuan``1">
+            <summary>
+            获取查询字段
+            </summary>
+            <typeparam name="T"></typeparam>
+            <returns></returns>
+        </member>
+        <member name="M:Common.Sql.SqlYuJuPingJie.GetXinZengOrUpdateZiDuan``1(System.Int32,``0)">
+            <summary>
+            获取查询字段 1表示新增
+            </summary>
+            <typeparam name="T"></typeparam>
+            <returns></returns>
+        </member>
+        <member name="M:Common.Sql.SqlYuJuPingJie.HuoQuLeiXing(System.Object)">
+            <summary>
+            1表示需要单引号
+            </summary>
+            <param name="o"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Common.Sql.ZiDuanAttribute">
+            <summary>
+            字段特性
+            </summary>
+        </member>
+        <member name="P:Common.Sql.ZiDuanAttribute.IsShiYong">
+            <summary>
+            true表示使用
+            </summary>
+        </member>
+        <member name="P:Common.Sql.ZiDuanAttribute.ZiDuanName">
+            <summary>
+            字段名称
+            </summary>
+        </member>
+        <member name="P:Common.Sql.ZiDuanAttribute.IsWhereGengXinJian">
+            <summary>
+            true 表示更新键
+            </summary>
+        </member>
+        <member name="P:Common.Sql.ZiDuanAttribute.IsZiZeng">
+            <summary>
+            true表示自增键
+            </summary>
+        </member>
+        <member name="P:Common.Sql.ZiDuanAttribute.IsShanChu">
+            <summary>
+            true表示删除键
+            </summary>
+        </member>
+        <member name="M:Common.Sql.ZiDuanAttribute.#ctor(System.String,System.Boolean,System.Boolean,System.Boolean,System.Boolean)">
+            <summary>
+            /实例化
+            </summary>
+            <param name="ziduanname"></param>
+            <param name="isshiyong"></param>
+            <param name="isgengxinjian"></param>
+            <param name="iszizeng"></param>
+            <param name="isshanchu"></param>
+        </member>
+        <member name="T:Common.YuYin.ABSYuYin">
+            <summary>
+            语音类
+            </summary>
+        </member>
+        <member name="M:Common.YuYin.ABSYuYin.AddHua(System.String)">
+            <summary>
+            增加语音
+            </summary>
+            <param name="neirong"></param>
+        </member>
+        <member name="P:Common.YuYin.ABSYuYin.SetYingLiang">
+            <summary>
+            设置音量
+            </summary>
+        </member>
+        <member name="P:Common.YuYin.ABSYuYin.SetYuShu">
+            <summary>
+            设置语速
+            </summary>
+        </member>
+        <member name="M:Common.YuYin.ABSYuYin.YuYinCaoZuo(System.Boolean)">
+            <summary>
+            KaiQi true表示开启语音 false 停止语音
+            </summary>
+            <param name="KaiQi"></param>
+        </member>
+        <member name="M:Common.YuYin.ABSYuYin.Close">
+            <summary>
+            关闭的方法
+            </summary>
+        </member>
+        <member name="T:Common.YuYin.DotNetYuYin">
+            <summary>
+            也需要安装语音包
+            </summary>
+        </member>
+        <member name="F:Common.YuYin.DotNetYuYin.KaiGuan">
+            <summary>
+            总开关
+            </summary>
+        </member>
+        <member name="F:Common.YuYin.DotNetYuYin.State">
+            <summary>
+            状态开关
+            </summary>
+        </member>
+        <member name="F:Common.YuYin.DotNetYuYin.yingliang">
+            <summary>
+            音量
+            </summary>
+        </member>
+        <member name="F:Common.YuYin.DotNetYuYin.yusu">
+            <summary>
+            语速
+            </summary>
+        </member>
+        <member name="M:Common.YuYin.DotNetYuYin.#ctor">
+            <summary>
+            实例化
+            </summary>
+        </member>
+        <member name="M:Common.YuYin.DotNetYuYin.YuYinCaoZuo(System.Boolean)">
+            <summary>
+            实现父类的语音操作
+            </summary>
+            <param name="KaiQi"></param>
+        </member>
+        <member name="M:Common.YuYin.DotNetYuYin.AddHua(System.String)">
+            <summary>
+            增加语音
+            </summary>
+            <param name="neirong"></param>
+        </member>
+        <member name="M:Common.YuYin.DotNetYuYin.Close">
+            <summary>
+            软件关闭调用
+            </summary>
+        </member>
+        <member name="P:Common.YuYin.DotNetYuYin.SetYingLiang">
+            <summary>
+            设置音量
+            </summary>
+        </member>
+        <member name="P:Common.YuYin.DotNetYuYin.SetYuShu">
+            <summary>
+            设置语速
+            </summary>
+        </member>
+        <member name="T:Common.YuYin.XiTongZiDaiYuYin">
+            <summary>
+            系统自带的语音
+            </summary>
+        </member>
+        <member name="F:Common.YuYin.XiTongZiDaiYuYin.KaiGuan">
+            <summary>
+            总开关
+            </summary>
+        </member>
+        <member name="F:Common.YuYin.XiTongZiDaiYuYin.State">
+            <summary>
+            状态开关
+            </summary>
+        </member>
+        <member name="F:Common.YuYin.XiTongZiDaiYuYin.yingliang">
+            <summary>
+            音量
+            </summary>
+        </member>
+        <member name="F:Common.YuYin.XiTongZiDaiYuYin.yusu">
+            <summary>
+            语速
+            </summary>
+        </member>
+        <member name="F:Common.YuYin.XiTongZiDaiYuYin._Speech">
+            <summary>
+            系统自带语音
+            </summary>
+        </member>
+        <member name="F:Common.YuYin.XiTongZiDaiYuYin.JieYuYan">
+            <summary>
+            增加说话
+            </summary>
+        </member>
+        <member name="M:Common.YuYin.XiTongZiDaiYuYin.#ctor">
+            <summary>
+            实例化
+            </summary>
+        </member>
+        <member name="M:Common.YuYin.XiTongZiDaiYuYin.YuYinCaoZuo(System.Boolean)">
+            <summary>
+            实现父类的语音操作
+            </summary>
+            <param name="KaiQi"></param>
+        </member>
+        <member name="M:Common.YuYin.XiTongZiDaiYuYin.AddHua(System.String)">
+            <summary>
+            增加语音
+            </summary>
+            <param name="neirong"></param>
+        </member>
+        <member name="M:Common.YuYin.XiTongZiDaiYuYin.Close">
+            <summary>
+            软件关闭调用
+            </summary>
+        </member>
+        <member name="P:Common.YuYin.XiTongZiDaiYuYin.SetYingLiang">
+            <summary>
+            设置音量
+            </summary>
+        </member>
+        <member name="P:Common.YuYin.XiTongZiDaiYuYin.SetYuShu">
+            <summary>
+            设置语速
+            </summary>
+        </member>
+        <member name="T:Common.YuYin.XuYaoSDKYuYin">
+            <summary>
+            需要安装SDK语音包
+            </summary>
+        </member>
+        <member name="F:Common.YuYin.XuYaoSDKYuYin.KaiGuan">
+            <summary>
+            总开关
+            </summary>
+        </member>
+        <member name="F:Common.YuYin.XuYaoSDKYuYin.State">
+            <summary>
+            状态开关
+            </summary>
+        </member>
+        <member name="F:Common.YuYin.XuYaoSDKYuYin.yingliang">
+            <summary>
+            音量
+            </summary>
+        </member>
+        <member name="F:Common.YuYin.XuYaoSDKYuYin.yusu">
+            <summary>
+            语速
+            </summary>
+        </member>
+        <member name="M:Common.YuYin.XuYaoSDKYuYin.#ctor">
+            <summary>
+            实例化
+            </summary>
+        </member>
+        <member name="M:Common.YuYin.XuYaoSDKYuYin.YuYinCaoZuo(System.Boolean)">
+            <summary>
+            实现父类的语音操作
+            </summary>
+            <param name="KaiQi"></param>
+        </member>
+        <member name="M:Common.YuYin.XuYaoSDKYuYin.AddHua(System.String)">
+            <summary>
+            增加语音
+            </summary>
+            <param name="neirong"></param>
+        </member>
+        <member name="M:Common.YuYin.XuYaoSDKYuYin.Close">
+            <summary>
+            软件关闭调用
+            </summary>
+        </member>
+        <member name="P:Common.YuYin.XuYaoSDKYuYin.SetYingLiang">
+            <summary>
+            设置音量
+            </summary>
+        </member>
+        <member name="P:Common.YuYin.XuYaoSDKYuYin.SetYuShu">
+            <summary>
+            设置语速
+            </summary>
+        </member>
+        <member name="T:CommLei.DataChuLi.DuRuExclWenDan">
+            <summary>
+            导出Excl文档，读取Excl文档用了EPPLus
+            </summary>
+        </member>
+        <member name="M:CommLei.DataChuLi.DuRuExclWenDan.DuQuWenJian(System.String,System.Int32,System.Int32)">
+            <summary>
+            把excl文件转换为datatable,
+            </summary>
+            <param name="filePath"></param>
+            <param name="lieindex">第几列开始</param>
+            <param name="rowindex">第几行开始</param>
+            <returns></returns>
+        </member>
+        <member name="M:CommLei.DataChuLi.DuRuExclWenDan.ShuChuExcelOrLis``1(System.String,System.Collections.Generic.Dictionary{System.String,System.String},System.Int32,System.Int32)">
+            <summary>
+             把excl文件转换为lis对象
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="filePath"></param>
+            <param name="headDict"></param>
+            <param name="lieindex"></param>
+            <param name="rowindex"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CommLei.DataChuLi.DuRuExclWenDan.ShuChuExcelOrLisN``1(System.String,System.Collections.Generic.Dictionary{System.String,System.String},System.Int32,System.Int32)">
+            <summary>
+             把excl文件转换为lis对象
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="filePath"></param>
+            <param name="headDict"></param>
+            <param name="lieindex"></param>
+            <param name="rowindex"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CommLei.DataChuLi.DuRuExclWenDan.CunZai(System.Collections.Generic.Dictionary{System.String,System.String},System.Reflection.PropertyInfo[],System.Collections.Generic.Dictionary{System.String,System.String}@)">
+            <summary>
+            是否存在
+            </summary>
+            <param name="headDict"></param>
+            <param name="shuxin"></param>
+            <param name="headDict1"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CommLei.DataChuLi.DuRuExclWenDan.DaoChuExc``1(System.String,System.Collections.Generic.List{``0},System.Collections.Generic.List{System.String},System.Action{System.Collections.Generic.List{``0},System.Int32,OfficeOpenXml.ExcelWorksheet})">
+            <summary>
+            导出Exc数据
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="filePath"></param>
+            <param name="ShuJu"></param>
+            <param name="LieMing"></param>
+            <param name="addzishuju">增加子数据用的</param>
+        </member>
+        <member name="M:CommLei.DataChuLi.DuRuExclWenDan.DaoChuExc(System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.Object}})">
+            <summary>
+            导出Exc数据
+            </summary>    
+            <param name="filePath"></param>
+            <param name="meilieshuju"></param>   
+        </member>
+        <member name="M:CommLei.DataChuLi.DuRuExclWenDan.DaoChuDataG(System.String,System.Windows.Forms.DataGridView,System.Collections.Generic.List{System.String})">
+            <summary>
+             导出Exc数据
+            </summary>
+            <param name="filePath"></param>
+            <param name="dataGridView1"></param>
+            <param name="buyaolie"></param>
+        </member>
+        <member name="M:CommLei.DataChuLi.DuRuExclWenDan.DaoChuZhuiJiaExe(System.String,System.Collections.Generic.Dictionary{System.String,System.Object})">
+            <summary>
+            导出追加的Exc数据
+            </summary>    
+            <param name="filePath"></param>
+            <param name="meilieshuju"></param>   
+        </member>
+        <member name="M:CommLei.DataChuLi.DuRuExclWenDan.DaoChuZhuiJiaExe(System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.Object}})">
+            <summary>
+            导出追加多条的Exc数据
+            </summary>    
+            <param name="filePath"></param>
+            <param name="meilieshuju"></param>   
+        </member>
+        <member name="T:CommLei.DataChuLi.HCDanGeDataLei`1">
+            <summary>
+            缓存单个数据的类
+            </summary>
+        </member>
+        <member name="F:CommLei.DataChuLi.HCDanGeDataLei`1.LisWuLiao">
+            <summary>
+            对象
+            </summary>
+        </member>
+        <member name="P:CommLei.DataChuLi.HCDanGeDataLei`1.IsShuJuKuai">
+            <summary>
+            true表示数据会存在数据块里,false 表示存在配置块
+            </summary>
+        </member>
+        <member name="M:CommLei.DataChuLi.HCDanGeDataLei`1.Ceratei">
+            <summary>
+            单例类，必须KaiqiRiZhi设置为True才能写日志
+            </summary>
+            <returns>返回NewXieRiZhiLog</returns>
+        </member>
+        <member name="M:CommLei.DataChuLi.HCDanGeDataLei`1.BaoCun">
+            <summary>
+            保存对象
+            </summary>
+        </member>
+        <member name="T:CommLei.DataChuLi.HCLisDataLei`1">
+            <summary>
+            缓存的集合单例类
+            </summary>
+        </member>
+        <member name="F:CommLei.DataChuLi.HCLisDataLei`1.LisWuLiao">
+            <summary>
+            集合对象
+            </summary>
+        </member>
+        <member name="P:CommLei.DataChuLi.HCLisDataLei`1.IsShuJuKuai">
+            <summary>
+            true表示数据会存在数据块里,false 表示存在配置块
+            </summary>
+        </member>
+        <member name="M:CommLei.DataChuLi.HCLisDataLei`1.Ceratei">
+            <summary>
+            单例类，必须KaiqiRiZhi设置为True才能写日志
+            </summary>
+            <returns>返回NewXieRiZhiLog</returns>
+        </member>
+        <member name="M:CommLei.DataChuLi.HCLisDataLei`1.BaoCun">
+            <summary>
+            保存对象
+            </summary>
+        </member>
+        <member name="M:CommLei.DataChuLi.HCLisDataLei`1.XiuGaiOrXinZengBaoCun(`0,System.Func{`0,System.Boolean})">
+            <summary>
+            修改与新增
+            </summary>
+            <param name="wuliao"></param>
+             <param name="ChuFaZhen"></param>
+        </member>
+        <member name="M:CommLei.DataChuLi.HCLisDataLei`1.ChaZhao(System.Func{`0,System.Boolean})">
+            <summary>
+            查找
+            </summary>
+            <param name="ChuFaZhen"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CommLei.DataChuLi.HCLisDataLei`1.ShanChu(System.Func{`0,System.Boolean})">
+            <summary>
+            删除
+            </summary>
+            <param name="ChuFaZhen"></param>
+        </member>
+        <member name="T:CommLei.DataChuLi.JosnOrSModel">
+            <summary>
+            新的josn配置，将支持连续作业
+            </summary>
+        </member>
+        <member name="F:CommLei.DataChuLi.JosnOrSModel.FilePath">
+            <summary>
+            文件路径
+            </summary>
+        </member>
+        <member name="F:CommLei.DataChuLi.JosnOrSModel.LianShiFilePath">
+            <summary>
+            文件路径
+            </summary>
+        </member>
+        <member name="M:CommLei.DataChuLi.JosnOrSModel.#ctor(System.String)">
+            <summary>
+            需要传来路径
+            </summary>
+            <param name="path"></param>
+        </member>
+        <member name="M:CommLei.DataChuLi.JosnOrSModel.XieTModel``1(``0)">
+            <summary>
+            写进ini文件
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="model"></param>
+        </member>
+        <member name="M:CommLei.DataChuLi.JosnOrSModel.XieTModel``1(System.Collections.Generic.List{``0})">
+            <summary>
+            写进ini文件
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="model"></param>
+        </member>
+        <member name="M:CommLei.DataChuLi.JosnOrSModel.GetTModel``1">
+            <summary>
+            能获取的对象只能是int flaot string datetime类型的属性对象
+            </summary>
+            <typeparam name="T"></typeparam>
+            <returns></returns>
+        </member>
+        <member name="M:CommLei.DataChuLi.JosnOrSModel.GetLisTModel``1">
+            <summary>
+            获取lis的值（inilis的值）
+            </summary>
+            <typeparam name="T"></typeparam>
+            <returns></returns>
+        </member>
+        <member name="M:CommLei.DataChuLi.JosnOrSModel.ShanChuWenJian">
+            <summary>
+            删除文件
+            </summary>
+        </member>
+        <member name="T:CommLei.DataChuLi.JosnOrXSModel">
+            <summary>
+            新的josn配置，将支持连续作业
+            </summary>
+        </member>
+        <member name="F:CommLei.DataChuLi.JosnOrXSModel.FilePath">
+            <summary>
+            文件路径
+            </summary>
+        </member>
+        <member name="M:CommLei.DataChuLi.JosnOrXSModel.#ctor(System.String)">
+            <summary>
+            需要传来路径
+            </summary>
+            <param name="path"></param>
+        </member>
+        <member name="M:CommLei.DataChuLi.JosnOrXSModel.XieTModel``1(``0)">
+            <summary>
+            写进ini文件
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="model"></param>
+        </member>
+        <member name="M:CommLei.DataChuLi.JosnOrXSModel.XieTModel(System.String)">
+            <summary>
+            写数据的
+            </summary>
+            <param name="neirong"></param>
+        </member>
+        <member name="M:CommLei.DataChuLi.JosnOrXSModel.GetLisTModel``1">
+            <summary>
+            获取lis的值（inilis的值）
+            </summary>
+            <typeparam name="T"></typeparam>
+            <returns></returns>
+        </member>
+        <member name="T:CommLei.DataChuLi.LogTxt">
+            <summary>
+            日记记录
+            </summary>
+        </member>
+        <member name="P:CommLei.DataChuLi.LogTxt.KaiqiRiZhi">
+            <summary>
+            开启日志，默认为不开启
+            </summary>
+        </member>
+        <member name="F:CommLei.DataChuLi.LogTxt._MovePath">
+            <summary>
+            文件大于5M时，迁移路径
+            </summary>
+        </member>
+        <member name="F:CommLei.DataChuLi.LogTxt._WenJianCunFangPath">
+            <summary>
+            日志文件放在哪个路径
+            </summary>
+        </member>
+        <member name="P:CommLei.DataChuLi.LogTxt.WenJianDaiXiao">
+            <summary>
+            文件大小
+            </summary>
+        </member>
+        <member name="P:CommLei.DataChuLi.LogTxt.IsDanDuCunFang">
+            <summary>
+            日志是否一个路径,true为一个单个文件，通过规则来区分,true 为单路径，要通过文件名
+            </summary>
+        </member>
+        <member name="M:CommLei.DataChuLi.LogTxt.Cerate">
+            <summary>
+            单例类，必须KaiqiRiZhi设置为True才能写日志
+            </summary>
+            <returns>返回NewXieRiZhiLog</returns>
+        </member>
+        <member name="M:CommLei.DataChuLi.LogTxt.Close">
+            <summary>
+            关闭日志，只有在程序关闭时调用
+            </summary>
+        </member>
+        <member name="M:CommLei.DataChuLi.LogTxt.AddMsg(System.String,System.String)">
+            <summary>
+            增加日志
+            </summary>
+            <param name="strMsg">日记记录</param>
+            <param name="FileNameOrGuiZe">文件名或者规则</param>
+        </member>
+        <member name="M:CommLei.DataChuLi.LogTxt.AddGuiZe(System.String,System.String)">
+            <summary>
+            当存放在一起的时候才可以用
+            </summary>
+        </member>
+        <member name="M:CommLei.DataChuLi.LogTxt.ClearZiDian">
+            <summary>
+            删除字典
+            </summary>
+        </member>
+        <member name="M:CommLei.DataChuLi.LogTxt.XieRiZhiXin(System.String,System.String)">
+            <summary>
+            写入日志
+            </summary>
+            <param name="Msg"></param>
+            <param name="filename"></param>
+        </member>
+        <member name="M:CommLei.DataChuLi.LogTxt.ShanChuWenJianCount(System.String,System.Int32,System.Int32)">
+            <summary>
+            删除文件中文件，当文件数量大于多少进行删除 ShanChuCount删除数量
+            </summary>
+            <param name="Path">文件夹</param>
+            <param name="Count">大于多少数量</param>
+            <param name="ShanChuCount">大于多少数量</param>
+        </member>
+        <member name="M:CommLei.DataChuLi.LogTxt.ShanChuWenJian(System.String,System.Int32)">
+            <summary>
+            删除文件中文件，多少天为准
+            </summary>
+            <param name="Path">文件夹</param>
+            <param name="TianShu">天数</param>
+        </member>
+        <member name="T:CommLei.DataChuLi.QiangJiaMi">
+            <summary>
+            强加密，目前还有很多没有完善
+            </summary>
+        </member>
+        <member name="M:CommLei.DataChuLi.QiangJiaMi.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:CommLei.DataChuLi.QiangJiaMi.jiaoyan(System.String)">
+            <summary>
+            加密校验
+            </summary>
+            <param name="canshu"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CommLei.DataChuLi.QiangJiaMi.JiaMi(System.String)">
+            <summary>
+            加密运算
+            </summary>
+            <param name="canshu">传来的字符串</param>
+            <returns>传出的加密字符串</returns>
+        </member>
+        <member name="M:CommLei.DataChuLi.QiangJiaMi.JieMi(System.String)">
+            <summary>
+            解密
+            </summary>
+            <param name="canshu">传来的字符串</param>
+            <returns>传出的解密字符串</returns>
+        </member>
+        <member name="T:CommLei.DataChuLi.SerialDataGuDingJieXi">
+            <summary>
+            分析串口固定数据的类(主要是收集)
+            </summary>
+        </member>
+        <member name="F:CommLei.DataChuLi.SerialDataGuDingJieXi._ShuJu">
+            <summary>
+            接收数据的存储
+            </summary>
+        </member>
+        <member name="F:CommLei.DataChuLi.SerialDataGuDingJieXi._LisDataByte">
+            <summary>
+            获取的解析出来的数据集合
+            </summary>
+        </member>
+        <member name="M:CommLei.DataChuLi.SerialDataGuDingJieXi.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="P:CommLei.DataChuLi.SerialDataGuDingJieXi.DataCount">
+            <summary>
+            数据多少
+            </summary>
+        </member>
+        <member name="M:CommLei.DataChuLi.SerialDataGuDingJieXi.GetShiShiData">
+            <summary>
+            获取当前数据，就是实时数据,移除以前的
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CommLei.DataChuLi.SerialDataGuDingJieXi.GetHeadAndRomveData">
+            <summary>
+            从开头获取数据，移除首次
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CommLei.DataChuLi.SerialDataGuDingJieXi.AddByteList(System.Byte[])">
+            <summary>
+            增加串口返回的数据
+            </summary>
+            <param name="bytearr">数据源</param>
+        </member>
+        <member name="M:CommLei.DataChuLi.SerialDataGuDingJieXi.AddByte(System.Byte)">
+            <summary>
+            增加单个数据
+            </summary>
+            <param name="byt">单个数据</param>
+        </member>
+        <member name="M:CommLei.DataChuLi.SerialDataGuDingJieXi.Clear">
+             <summary>
+            清理数据
+             </summary>
+        </member>
+        <member name="M:CommLei.DataChuLi.SerialDataGuDingJieXi.JieXiWanMeiData(System.Int32,System.Byte[],System.Boolean,System.Func{System.Collections.Generic.List{System.Byte},System.Boolean},System.Boolean)">
+            <summary>
+            完美解析数据
+            </summary>
+            <param name="shijichangdu">数据的实际长度，就是报文的长度</param>
+            <param name="qianduanjuku">开头几位数据</param>
+            <param name="shifoujiaoyan">是否需要校验，如果不校验，委托可以穿null</param>
+            <param name="jiaoyanhanshu">校验函数</param>
+            <param name="tiaochu">是否在查第一次就跳出</param>
+        </member>
+        <member name="T:CommLei.DataChuLi.SerialFeiDataJieXi">
+            <summary>
+            分析串口非固定数据的类(主要是收集)
+            </summary>
+        </member>
+        <member name="F:CommLei.DataChuLi.SerialFeiDataJieXi._ShuJu">
+            <summary>
+            接收数据的存储
+            </summary>
+        </member>
+        <member name="F:CommLei.DataChuLi.SerialFeiDataJieXi._LisDataByte">
+            <summary>
+            获取的解析出来的数据集合
+            </summary>
+        </member>
+        <member name="M:CommLei.DataChuLi.SerialFeiDataJieXi.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="P:CommLei.DataChuLi.SerialFeiDataJieXi.DataCount">
+            <summary>
+            数据多少
+            </summary>
+        </member>
+        <member name="M:CommLei.DataChuLi.SerialFeiDataJieXi.GetShiShiData">
+            <summary>
+            获取当前数据，就是实时数据,移除以前的
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CommLei.DataChuLi.SerialFeiDataJieXi.GetHeadAndRomveData">
+            <summary>
+            从开头获取数据，移除首次
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CommLei.DataChuLi.SerialFeiDataJieXi.AddByteList(System.Byte[])">
+            <summary>
+            增加串口返回的数据
+            </summary>
+            <param name="bytearr">数据源</param>
+        </member>
+        <member name="M:CommLei.DataChuLi.SerialFeiDataJieXi.AddByte(System.Byte)">
+            <summary>
+            增加单个数据
+            </summary>
+            <param name="byt">单个数据</param>
+        </member>
+        <member name="M:CommLei.DataChuLi.SerialFeiDataJieXi.Clear">
+             <summary>
+            清理数据
+             </summary>
+        </member>
+        <member name="M:CommLei.DataChuLi.SerialFeiDataJieXi.JieXiWanMeiData(System.Collections.Generic.List{System.Byte},System.Collections.Generic.List{System.Byte},System.Boolean,System.Func{System.Collections.Generic.List{System.Byte},System.Boolean},System.Boolean)">
+            <summary>
+            完美解析数据,true 为跳出
+            </summary>      
+            <param name="qianduanjuku">开头几位数据</param>
+            <param name="jiesufu">结束数据</param>
+            <param name="shifoujiaoyan">是否需要校验，如果不校验，委托可以穿null</param>
+            <param name="jiaoyanhanshu">校验函数</param>
+            <param name="tiaochu">是否在查第一次就跳出</param>
+        </member>
+        <member name="T:CommLei.GongYeJieHe.FanXingJiHeLei`1">
+            <summary>
+            泛型集合类 工业用的多一点
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="F:CommLei.GongYeJieHe.FanXingJiHeLei`1.FanXinList">
+            <summary>
+            泛型集合
+            </summary>
+        </member>
+        <member name="M:CommLei.GongYeJieHe.FanXingJiHeLei`1.Add(`0)">
+            <summary>
+            增加对象
+            </summary>
+            <param name="Tobject">泛型集合要增加的对象</param>
+        </member>
+        <member name="M:CommLei.GongYeJieHe.FanXingJiHeLei`1.Add(`0[])">
+            <summary>
+            增加对象
+            </summary>
+            <param name="Tobject">泛型集合要增加的对象</param>
+        </member>
+        <member name="M:CommLei.GongYeJieHe.FanXingJiHeLei`1.Romve_Head">
+            <summary>
+            移除泛型集合的首行
+            </summary>
+        </member>
+        <member name="M:CommLei.GongYeJieHe.FanXingJiHeLei`1.GetModel_Head">
+            <summary>
+            获取首个对象
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CommLei.GongYeJieHe.FanXingJiHeLei`1.GetModel_iHead(System.Int32)">
+            <summary>
+            获指定一个对象
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CommLei.GongYeJieHe.FanXingJiHeLei`1.GetModel_Head_RomeHead">
+            <summary>
+            获取首个对象，且移除首个
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CommLei.GongYeJieHe.FanXingJiHeLei`1.GetModel_End_RomeALL">
+            <summary>
+            获取最后对象，且移除所有
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CommLei.GongYeJieHe.FanXingJiHeLei`1.Romve_Zhiding(System.Int32)">
+            <summary>
+            提供制定移除
+            </summary>
+            <param name="Index">索引</param>
+        </member>
+        <member name="M:CommLei.GongYeJieHe.FanXingJiHeLei`1.Romve_Zhiding(`0)">
+            <summary>
+            提供制定移除
+            </summary>
+            <param name="Tobject">T 类型</param>
+        </member>
+        <member name="M:CommLei.GongYeJieHe.FanXingJiHeLei`1.Romve_All">
+            <summary>
+            移除所有
+            </summary>
+        </member>
+        <member name="M:CommLei.GongYeJieHe.FanXingJiHeLei`1.Romve_Range(System.Int32,System.Int32)">
+            <summary>
+            一定范围
+            </summary>
+        </member>
+        <member name="M:CommLei.GongYeJieHe.FanXingJiHeLei`1.GetListT">
+            <summary>
+            获取泛型集合
+            </summary>
+            <returns>泛型集合</returns>
+        </member>
+        <member name="M:CommLei.GongYeJieHe.FanXingJiHeLei`1.GetCount">
+            <summary>
+            获取泛型集合数量
+            </summary>
+            <returns>返回集合的数量</returns>
+        </member>
+        <member name="T:CommLei.JiChuLei.ChangYong">
+            <summary>
+            常用的静态类  数据转换  日期天数获取 josn 字符分割 枚举转换
+            </summary>
+        </member>
+        <member name="M:CommLei.JiChuLei.ChangYong.TryInt(System.Object,System.Int32)">
+            <summary>
+            尝试去转换 Tvalue  转换的失败值
+            </summary>
+            <param name="value">string类型</param>
+            <param name="Tvalue">T类型的值</param>
+            <returns></returns>
+        </member>
+        <member name="M:CommLei.JiChuLei.ChangYong.TryShort(System.Object,System.Int16)">
+            <summary>
+            尝试去转换 Tvalue  转换的失败值
+            </summary>
+            <param name="value">string类型</param>
+            <param name="Tvalue">T类型的值</param>
+            <returns></returns>
+        </member>
+        <member name="M:CommLei.JiChuLei.ChangYong.TryUInt(System.Object,System.UInt32)">
+            <summary>
+            尝试去转换 Tvalue  转换的失败值
+            </summary>
+            <param name="value">string类型</param>
+            <param name="Tvalue">T类型的值</param>
+            <returns></returns>
+        </member>
+        <member name="M:CommLei.JiChuLei.ChangYong.TryUShort(System.Object,System.UInt16)">
+            <summary>
+            尝试去转换 Tvalue  转换的失败值
+            </summary>
+            <param name="value">string类型</param>
+            <param name="Tvalue">T类型的值</param>
+            <returns></returns>
+        </member>
+        <member name="M:CommLei.JiChuLei.ChangYong.TryLong(System.Object,System.Int64)">
+            <summary>
+            尝试去转换  Tvalue  转换的失败值
+            </summary>
+            <param name="value">string类型</param>
+            <param name="Tvalue">T类型的值</param>
+            <returns></returns>
+        </member>
+        <member name="M:CommLei.JiChuLei.ChangYong.TryFloat(System.Object,System.Single)">
+            <summary>
+            尝试去转换  Tvalue  转换的失败值
+            </summary>
+            <param name="value">string类型</param>
+            <param name="Tvalue">T类型的值</param>
+            <returns></returns>
+        </member>
+        <member name="M:CommLei.JiChuLei.ChangYong.TryDouble(System.Object,System.Double)">
+            <summary>
+            尝试去转换Tvalue  转换的失败值
+            </summary>
+            <param name="value">string类型</param>
+            <param name="Tvalue">T类型的值</param>
+            <returns></returns>
+        </member>
+        <member name="M:CommLei.JiChuLei.ChangYong.TryByte(System.String,System.Byte)">
+            <summary>
+            尝试去转换
+            </summary>
+            <param name="value">string类型</param>
+            <param name="Tvalue">T类型的值</param>
+            <returns></returns>
+        </member>
+        <member name="M:CommLei.JiChuLei.ChangYong.TryDate(System.String,System.DateTime)">
+            <summary>
+            尝试去转换
+            </summary>
+            <param name="value">string类型</param>
+            <param name="Tvalue">T类型的值</param>
+            <returns></returns>
+        </member>
+        <member name="M:CommLei.JiChuLei.ChangYong.TryStr(System.Object,System.String)">
+            <summary>
+            尝试转换字符串，如果字符串是string类型，是空数据的话，就会取ShiBaiZhi
+            </summary>
+            <param name="Value">泛型值</param>
+            <param name="ShiBaiZhi">失败时给出的值</param>
+            <returns></returns>
+        </member>
+        <member name="M:CommLei.JiChuLei.ChangYong.HuoQuJsonStr(System.Object)">
+            <summary>
+            把对象转换成josn
+            </summary>       
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CommLei.JiChuLei.ChangYong.GetNiMingJosn(System.String)">
+            <summary>
+            获取匿名动态对象,
+            </summary>
+            <param name="josn">josn内容</param>
+            <returns></returns>
+        </member>
+        <member name="M:CommLei.JiChuLei.ChangYong.GetNiMingJiHeJosn(System.String)">
+            <summary>
+            获取匿名动态对象,
+            </summary>
+            <param name="josn">josn内容</param>
+            <returns></returns>
+        </member>
+        <member name="M:CommLei.JiChuLei.ChangYong.HuoQuJsonToShiTi``1(System.String)">
+            <summary>
+            josn实体
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="Josn"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CommLei.JiChuLei.ChangYong.FuZhiShiTi``1(``0)">
+            <summary>
+            复制新的实体
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CommLei.JiChuLei.ChangYong.FuZhiShiTi``2(``1)">
+            <summary>
+            如果格式一样可以复制新的实体
+            </summary>
+            <typeparam name="T"></typeparam>
+            <typeparam name="V"></typeparam>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CommLei.JiChuLei.ChangYong.PageYeShu(System.Int32,System.Int32)">
+            <summary>
+            用于计算页数
+            </summary>
+            <param name="Row">单位行</param>
+            <param name="AllRow">总行</param>
+            <returns></returns>
+        </member>
+        <member name="M:CommLei.JiChuLei.ChangYong.ByteOrString(System.Collections.Generic.List{System.Byte},System.String)">
+            <summary>
+            把字节数据转换标准字符串报文格式16进制，以什么进行分割
+            </summary>
+            <param name="shuju"></param>
+            <param name="fengezhiduan"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CommLei.JiChuLei.ChangYong.ByteOrString(System.Byte[],System.String)">
+            <summary>
+            把字节数据转换标准字符串报文格式16进制，以什么进行分割
+            </summary>
+            <param name="shuju"></param>
+            <param name="fengezhiduan"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CommLei.JiChuLei.ChangYong.FenGeDaBao``1(System.Collections.Generic.List{``0},System.String)">
+            <summary>
+            把一个对象进行分割起来 例如objeec 对象 转为1,2,1,3,1这样子
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="objeec">分割对象</param>
+            <param name="fengefu">分隔符</param>
+            <returns></returns>
+        </member>
+        <member name="M:CommLei.JiChuLei.ChangYong.JieGeStr(System.String,System.Char)">
+            <summary>
+            把一个对象进行分割起来 例如objeec 对象 转为1,2,1,3,1这样子
+            </summary>       
+            <param name="zifuchuan">分割对象</param>
+            <param name="fengefu">分隔符</param>
+            <returns></returns>
+        </member>
+        <member name="M:CommLei.JiChuLei.ChangYong.JieGeInt(System.String,System.Char)">
+            <summary>
+            把一个对象进行分割起来 例如objeec 对象 转为1,2,1,3,1这样子
+            </summary>      
+            <param name="zifuchuan">分割对象</param>
+            <param name="fengefu">分隔符</param>
+            <returns></returns>
+        </member>
+        <member name="M:CommLei.JiChuLei.ChangYong.JieGeFlaot(System.String,System.Char)">
+            <summary>
+            把一个对象进行分割起来 例如objeec 对象 转为1,2,1,3,1这样子
+            </summary>
+            <param name="zifuchuan">分割对象</param>
+            <param name="fengefu">分隔符</param>
+            <returns></returns>
+        </member>
+        <member name="M:CommLei.JiChuLei.ChangYong.JieGeDouble(System.String,System.Char)">
+            <summary>
+            把一个对象进行分割起来 例如objeec 对象 转为1,2,1,3,1这样子
+            </summary>
+            <param name="zifuchuan">分割对象</param>
+            <param name="fengefu">分隔符</param>
+            <returns></returns>
+        </member>
+        <member name="M:CommLei.JiChuLei.ChangYong.LisFindHanYou``1(System.Collections.Generic.List{``0},System.Collections.Generic.List{``0})">
+            <summary>
+            查找是否含有 含有返回所在index  否则返回-1，数量在1000000 一百以下 都是比较快的,目前只支持int double flaot，byte，string，连续的
+            </summary>
+            <param name="socbyte">源数据</param>
+            <param name="mubiao">包含数据</param>
+            <returns></returns>
+        </member>
+        <member name="M:CommLei.JiChuLei.ChangYong.MeiJuLisName(System.Type)">
+            <summary>
+            把枚举转名称转化为list
+            </summary>
+            <param name="meijulei"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CommLei.JiChuLei.ChangYong.GetMeiJuZhi(System.Type,System.String)">
+            <summary>
+            获取枚举值，枚举的字符串名称
+            </summary>
+            <param name="meiju"></param>
+            <param name="mingcheng"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CommLei.JiChuLei.ChangYong.GetMeiJuZhi``1(System.String)">
+            <summary>
+            获取枚举值，通过传入枚举的名称就可以相对应的枚举
+            </summary>
+            <param name="mingcheng"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CommLei.JiChuLei.ChangYong.GetBenJiIP">
+            <summary>
+            获取本机IP
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CommLei.JiChuLei.ChangYong.GetBenJiCom">
+            <summary>
+            获取本机的com
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CommLei.JiChuLei.ChangYong.GetWenJianHouZui(System.String)">
+            <summary>
+            获取文件的后缀
+            </summary>
+            <param name="filename">文件名</param>
+            <returns></returns>
+        </member>
+        <member name="M:CommLei.JiChuLei.ChangYong.GetWenJianName(System.String)">
+            <summary>
+            获取文件名，无后缀的,不包含目录部分
+            </summary>
+            <param name="filename"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CommLei.JiChuLei.ChangYong.GetWenJianQuanName(System.String)">
+            <summary>
+            获取文件名，有后缀的 不包含目录部分
+            </summary>
+            <param name="filename"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CommLei.JiChuLei.ChangYong.GetWenJianMuLu(System.String)">
+            <summary>
+            获取文件目录部分
+            </summary>
+            <param name="filename"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CommLei.JiChuLei.ChangYong.GetGaiYueDY(System.DateTime)">
+            <summary>
+            取得某月的第一天
+            </summary>
+            <param name="datetime">要取得月份第一天的时间</param>
+            <returns></returns>
+        </member>
+        <member name="M:CommLei.JiChuLei.ChangYong.GetGaiYueZH(System.DateTime)">
+            <summary>
+            取得某月的最后一天
+            </summary>
+            <param name="datetime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CommLei.JiChuLei.ChangYong.GetSYueDY(System.DateTime)">
+            <summary>
+             取得上个月第一天
+            </summary>
+            <param name="datetime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CommLei.JiChuLei.ChangYong.GetSYueZH(System.DateTime)">
+            <summary>
+            取得上个月的最后一天
+            </summary>
+            <param name="datetime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CommLei.JiChuLei.ChangYong.GetDangQianSM(System.DateTime)">
+            <summary>
+            取得当前日期的23：59：59 到 00:00:00
+            </summary>
+            <param name="datetime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CommLei.JiChuLei.ChangYong.GetRenYiSM(System.DateTime,System.Int32,System.Int32)">
+            <summary>
+            取得当前日期的23：59：59 到 00:00:00 qianhoutianshu表示天数，type 1为表示取该时间  2为前面几天到该时间，3为从该时间到后面几天
+            </summary>
+            <param name="datetime"></param>
+            <param name="qianhoutianshu"></param>
+            <param name="type"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CommLei.JiChuLei.ChangYong.ZhouDiJiTian(System.DateTime)">
+            <summary>
+            周的星期几
+            </summary>
+            <param name="dt"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CommLei.JiChuLei.ChangYong.YueDiJiTian(System.DateTime)">
+            <summary>
+            月的第几天
+            </summary>
+            <param name="dt"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CommLei.JiChuLei.ChangYong.ClearEvent(System.Object,System.String)">
+            <summary>
+            清除事件所有注册的方法 duixiang 事件的类 eventName事件名称
+            </summary>
+            <param name="duixiang"></param>
+            <param name="eventName"></param>
+        </member>
+        <member name="M:CommLei.JiChuLei.ChangYong.Ansi_To_Uif(System.String)">
+            <summary>
+            把Ansi转换为Uif
+            </summary>
+            <param name="AnsiString"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CommLei.JiChuLei.ChangYong.Get10Or2(System.Int32,System.Int32)">
+            <summary>
+            10转2进制
+            </summary>
+            <param name="zhi"></param>
+            <param name="shuliang"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CommLei.JiChuLei.ChangYong.StrDataCut(System.String,System.String,System.String,System.Int32)">
+            <summary>
+            string 类型的数据截取
+            </summary>
+            <param name="startValue">开始截取的字符串</param>
+            <param name="endValue">末尾截取字符串</param>
+             <param name="strData">原始值</param>
+             <param name="isbaoliu">1保留末尾与原始值</param>
+            <returns></returns>
+        </member>
+        <member name="M:CommLei.JiChuLei.ChangYong.HexStringToByte(System.String)">
+            <summary>
+            把16进制的字符串的报文转换为byte[]数组
+            </summary>
+            <param name="hexstring"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CommLei.JiChuLei.ChangYong.GetEnumDescription(System.Enum)">
+            <summary>
+            获取枚举的描述
+            </summary>
+            <param name="enumValue"></param>
+            <returns></returns>
+        </member>
+        <member name="T:CommLei.JiChuLei.KuoZhanLei">
+            <summary>
+            扩展类
+            </summary>
+        </member>
+        <member name="M:CommLei.JiChuLei.KuoZhanLei.ByteAdd(System.Byte[],System.Byte[])">
+            <summary>
+            字节相加
+            </summary>
+            <param name="data"></param>
+            <param name="val"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CommLei.JiChuLei.KuoZhanLei.SubArray(System.Byte[],System.Int32,System.Int32)">
+            <summary>
+            取某段字节
+            </summary>
+            <param name="mydata"></param>
+            <param name="index"></param>
+            <param name="count"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CommLei.JiChuLei.KuoZhanLei.AddStr(System.String,System.String)">
+            <summary>
+            字符相加原理
+            </summary>
+            <param name="yuanshi"></param>
+            <param name="xiangjia"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CommLei.JiChuLei.KuoZhanLei.HanYouJiHe``1(``0[],``0[])">
+            <summary>
+            查找数据是否包含该项
+            </summary>
+            <typeparam name="T">泛型</typeparam>
+            <param name="socbyte1">泛型数组</param>
+            <param name="mubiao1">包含的数组</param>
+            <returns></returns>
+        </member>
+        <member name="M:CommLei.JiChuLei.KuoZhanLei.HanYouJiHe``1(System.Collections.Generic.List{``0},System.Collections.Generic.List{``0})">
+             <summary>
+            找是否含有
+             </summary>
+             <param name="socbyte"></param>
+             <param name="mubiao"></param>
+             <returns></returns>
+        </member>
+        <member name="M:CommLei.JiChuLei.KuoZhanLei.HanYouJiHe``1(``0[],``0[],System.Int32)">
+            <summary>
+            查找数据是否包含该项
+            </summary>
+            <typeparam name="T">泛型</typeparam>
+            <param name="socbyte1">泛型数组</param>
+            <param name="mubiao1">包含的数组</param>
+            <param name="xinindex">包含的数组</param>
+            <returns></returns>
+        </member>
+        <member name="M:CommLei.JiChuLei.KuoZhanLei.HanYouJiHe``1(System.Collections.Generic.List{``0},System.Collections.Generic.List{``0},System.Int32)">
+             <summary>
+            找是否含有
+             </summary>
+             <param name="socbyte"></param>
+             <param name="mubiao"></param>
+             <param name="xinindex"></param>
+             <returns></returns>
+        </member>
+        <member name="T:CommLei.JieMianLei.Controlinkove">
+            <summary>
+            跨线程调用控件
+            </summary>
+        </member>
+        <member name="F:CommLei.JieMianLei.Controlinkove._form">
+            <summary>
+            那个窗体
+            </summary>
+        </member>
+        <member name="F:CommLei.JieMianLei.Controlinkove._FangZhiGuanBiBaoCuo">
+            <summary>
+            控制参数，防止窗体关闭时，还在调用控件，默认是true，为false就会跳出
+            </summary>
+        </member>
+        <member name="P:CommLei.JieMianLei.Controlinkove.FangZhiGuanBiBaoCuo">
+            <summary>
+            控制参数，防止窗体关闭时，还在调用控件，默认是true，为false就会跳出
+            </summary>
+        </member>
+        <member name="M:CommLei.JieMianLei.Controlinkove.#ctor(System.Windows.Forms.Form)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="form"></param>
+        </member>
+        <member name="M:CommLei.JieMianLei.Controlinkove.SetFrom(System.Windows.Forms.Form)">
+            <summary>
+            用于子窗体的设置
+            </summary>
+            <param name="form"></param>
+        </member>
+        <member name="M:CommLei.JieMianLei.Controlinkove.ContorlText(System.Windows.Forms.Control,System.String)">
+            <summary>
+            跨线程给控件文本赋值
+            </summary>
+            <param name="Kongjian"></param>
+            <param name="Text"></param>
+        </member>
+        <member name="M:CommLei.JieMianLei.Controlinkove.ContorlBackColor(System.Windows.Forms.Control,System.Drawing.Color)">
+            <summary>
+            控件的背景色
+            </summary>
+            <param name="Kongjian"></param>
+            <param name="Text"></param>
+        </member>
+        <member name="M:CommLei.JieMianLei.Controlinkove.Clear(System.Windows.Forms.TextBox)">
+            <summary>
+            清理
+            </summary>
+            <param name="Kongjian"></param>
+        </member>
+        <member name="M:CommLei.JieMianLei.Controlinkove.Clear(System.Windows.Forms.Label)">
+            <summary>
+            清理
+            </summary>
+            <param name="Kongjian"></param>
+        </member>
+        <member name="M:CommLei.JieMianLei.Controlinkove.Clear(System.Windows.Forms.Label,System.String)">
+            <summary>
+            清理
+            </summary>
+            <param name="Kongjian"></param>
+            <param name="LeiRong"></param>
+        </member>
+        <member name="M:CommLei.JieMianLei.Controlinkove.Clear(System.Windows.Forms.ListView)">
+            <summary>
+            清理
+            </summary>
+            <param name="Kongjian"></param>
+        </member>
+        <member name="M:CommLei.JieMianLei.Controlinkove.Clear(System.Windows.Forms.ListBox)">
+            <summary>
+            清理
+            </summary>
+            <param name="Kongjian"></param>
+        </member>
+        <member name="M:CommLei.JieMianLei.Controlinkove.Clear(System.Windows.Forms.ComboBox)">
+            <summary>
+            清理
+            </summary>
+            <param name="Kongjian"></param>
+        </member>
+        <member name="M:CommLei.JieMianLei.Controlinkove.Clear(System.Windows.Forms.RichTextBox)">
+            <summary>
+            清理
+            </summary>
+            <param name="Kongjian"></param>
+        </member>
+        <member name="M:CommLei.JieMianLei.Controlinkove.FanXingGaiBing``2(``0,``1,System.Action{``0,``1})">
+            <summary>
+            泛型执行跨线程操作控件
+            </summary>
+            <typeparam name="T">执行的文本</typeparam>
+            <typeparam name="V">控件</typeparam>
+            <param name="Kongjian"></param>
+            <param name="Tneirong"></param>
+            <param name="zuoshenmeshi"></param>
+        </member>
+        <member name="M:CommLei.JieMianLei.Controlinkove.FanXingGaiBing(System.Action)">
+             <summary>
+             泛型执行跨线程操作控件
+             </summary>
+            <param name="zuoshenmeshi"></param>
+        </member>
+        <member name="M:CommLei.JieMianLei.Controlinkove.FanXingGaiBing``1(``0,System.Action{``0})">
+            <summary>
+            泛型执行跨线程操作控件
+            </summary>
+            <typeparam name="T">执行的文本</typeparam>
+             <param name="Kongjian"></param>
+            <param name="zuoshenmeshi"></param>
+        </member>
+        <member name="T:CommLei.JieMianLei.JieJueChuangTiPingJie">
+            <summary>
+            在指定的容器控件显示窗体
+            </summary>
+        </member>
+        <member name="M:CommLei.JieMianLei.JieJueChuangTiPingJie.OpenFrom(System.Windows.Forms.Form,System.Windows.Forms.Control)">
+            <summary>
+            对传入的窗体对象进行处理
+            </summary>
+            <param name="from"></param>
+            <param name="kongjian"></param>
+        </member>
+        <member name="M:CommLei.JieMianLei.JieJueChuangTiPingJie.CloseForm(System.String,System.Windows.Forms.Control)">
+            <summary>
+            对传入的窗体进行关闭校验
+            </summary>
+            <param name="mingcheng"></param>
+            <param name="kongjian"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CommLei.JieMianLei.JieJueChuangTiPingJie.OpenFrom(CommLei.JieMianLei.FromDX)">
+            <summary>
+            首选使用
+            </summary>
+            <param name="MFdx"></param>
+        </member>
+        <member name="T:CommLei.JieMianLei.FromDX">
+            <summary>
+            用于打开那个窗体
+            </summary>
+        </member>
+        <member name="P:CommLei.JieMianLei.FromDX.DX_mingcheng">
+            <summary>
+            窗体Name属性
+            </summary>
+        </member>
+        <member name="P:CommLei.JieMianLei.FromDX.DX_kongjian">
+            <summary>
+            父控件是谁
+            </summary>
+        </member>
+        <member name="P:CommLei.JieMianLei.FromDX.DX_chuangti">
+            <summary>
+            显示窗体
+            </summary>
+        </member>
+        <member name="M:CommLei.JieMianLei.FromDX.#ctor(System.Windows.Forms.Form,System.Windows.Forms.Control)">
+            <summary>
+            构造函数，不需要赋值属性了
+            </summary>
+            <param name="from"></param>
+            <param name="rongqikongjian"></param>
+        </member>
+        <member name="M:CommLei.JieMianLei.FromDX.#ctor">
+            <summary>
+            需要赋值属性
+            </summary>
+        </member>
+        <member name="T:CommLei.JieMianLei.SuoFangLei">
+            <summary>
+            窗体缩放类
+            </summary>
+        </member>
+        <member name="F:CommLei.JieMianLei.SuoFangLei.Top">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CommLei.JieMianLei.SuoFangLei.Left">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CommLei.JieMianLei.SuoFangLei.Heigth">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CommLei.JieMianLei.SuoFangLei.Wigth">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CommLei.JieMianLei.SuoFangLei.ZiTiDaXiao">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CommLei.JieMianLei.SuoFangLei.BianHuaKongJian">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:CommLei.JieMianLei.SuoFangLei.IsDuiWenZiSuoFang">
+            <summary>
+            是否对文字进行缩放
+            </summary>
+        </member>
+        <member name="F:CommLei.JieMianLei.SuoFangLei.WeiShu.Shi">
+            <summary>
+            十分位
+            </summary>
+        </member>
+        <member name="F:CommLei.JieMianLei.SuoFangLei.WeiShu.Bai">
+            <summary>
+            百分位
+            </summary>
+        </member>
+        <member name="F:CommLei.JieMianLei.SuoFangLei.WeiShu.Qian">
+            <summary>
+            千分位
+            </summary>
+        </member>
+        <member name="F:CommLei.JieMianLei.SuoFangLei.JinWeiType.Wu">
+            <summary>
+            五近位
+            </summary>
+        </member>
+        <member name="F:CommLei.JieMianLei.SuoFangLei.JinWeiType.Liu">
+             <summary>
+            六近位
+             </summary>
+        </member>
+        <member name="M:CommLei.JieMianLei.SuoFangLei.#ctor(System.Windows.Forms.Control)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="form"></param>
+        </member>
+        <member name="M:CommLei.JieMianLei.SuoFangLei.#ctor(System.Windows.Forms.Form)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="form"></param>
+        </member>
+        <member name="M:CommLei.JieMianLei.SuoFangLei.#ctor(System.Windows.Forms.Form,System.Collections.Generic.List{System.Windows.Forms.Control})">
+            <summary>
+            解决有些不需要进行的缩放的控件
+            </summary>
+            <param name="form"></param>
+            <param name="Liskongjian"></param>
+        </member>
+        <member name="M:CommLei.JieMianLei.SuoFangLei.#ctor(System.Windows.Forms.Control,System.Collections.Generic.List{System.Windows.Forms.Control})">
+            <summary>
+            解决有些不需要进行的缩放的控件
+            </summary>
+            <param name="form"></param>
+            <param name="Liskongjian"></param>
+        </member>
+        <member name="M:CommLei.JieMianLei.SuoFangLei.CunKongJian1(System.Collections.Generic.List{System.Windows.Forms.Control})">
+            <summary>
+            
+            </summary>
+            <param name="Liskongjian"></param>
+        </member>
+        <member name="M:CommLei.JieMianLei.SuoFangLei.CunKongJian(System.Windows.Forms.Control)">
+            <summary>
+            
+            </summary>
+            <param name="kongjian"></param>
+        </member>
+        <member name="M:CommLei.JieMianLei.SuoFangLei.DataSiSheWuRu(System.Double,CommLei.JieMianLei.SuoFangLei.WeiShu,CommLei.JieMianLei.SuoFangLei.JinWeiType)">
+            <summary>
+             五入
+            </summary>
+            <param name="CanShu2">传进来的参数</param>
+            <param name="weishu">在那个位置进位</param>
+            <param name="type">是否是五开始进位</param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

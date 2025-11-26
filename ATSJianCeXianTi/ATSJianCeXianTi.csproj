@@ -1,0 +1,347 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FC18CD09-4A4F-4269-AA84-D0BF5C7850C3}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ATSJianCeXianTi</RootNamespace>
+    <AssemblyName>ATSJianCeXianTi</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\ATSUI\bin\Debug\JieMianJK\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BaseUI">
+      <HintPath>..\WaiBuDLL\BaseUI.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Common">
+      <HintPath>..\WaiBuDLL\Common.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="ExpandableGridView">
+      <HintPath>..\WaiBuDLL\ExpandableGridView.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="SSheBei">
+      <HintPath>..\WaiBuDLL\SSheBei.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="GongNengLei\CaoZuoSheBeiLei.cs" />
+    <Compile Include="GongNengLei\DengDaiTuiChuLei.cs" />
+    <Compile Include="GongNengLei\GNKJ\DengDaiTuiChuKJ.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GongNengLei\GNKJ\DengDaiTuiChuKJ.Designer.cs">
+      <DependentUpon>DengDaiTuiChuKJ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GongNengLei\Model\DengDaiModel.cs" />
+    <Compile Include="GongNengLei\TangChuanLei.cs" />
+    <Compile Include="GongNengLei\XuQiTaLei.cs" />
+    <Compile Include="GongNengLei\YanShiLei.cs" />
+    <Compile Include="JKKJ\PeiZhi\HuaTuKJ.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="JKKJ\PeiZhi\HuaTuKJ.Designer.cs">
+      <DependentUpon>HuaTuKJ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="JKKJ\PeiZhi\XuanZeDuXieKJ.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="JKKJ\PeiZhi\XuanZeDuXieKJ.Designer.cs">
+      <DependentUpon>XuanZeDuXieKJ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="JKKJ\TangChuan\TuXingFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="JKKJ\TangChuan\TuXingFrm.Designer.cs">
+      <DependentUpon>TuXingFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="JKKJ\XianShi\GengHuanTanZhenFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="JKKJ\XianShi\GengHuanTanZhenFrm.Designer.cs">
+      <DependentUpon>GengHuanTanZhenFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="JKKJ\XianShi\GZKJ.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="JKKJ\XianShi\GZKJ.Designer.cs">
+      <DependentUpon>GZKJ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="JKKJ\XianShi\TangChaunKJ.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="JKKJ\XianShi\TangChaunKJ.Designer.cs">
+      <DependentUpon>TangChaunKJ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="JKKJ\XianShi\TDBiaoGeKJ.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="JKKJ\XianShi\TDBiaoGeKJ.Designer.cs">
+      <DependentUpon>TDBiaoGeKJ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="JKKJ\PeiZhi\TDPeiZhiKJ.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="JKKJ\PeiZhi\TDPeiZhiKJ.Designer.cs">
+      <DependentUpon>TDPeiZhiKJ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="JKKJ\XianShi\TDLanKJ.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="JKKJ\XianShi\TDLanKJ.Designer.cs">
+      <DependentUpon>TDLanKJ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="JKKJ\XianShi\TDUIKJ.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="JKKJ\XianShi\TDUIKJ.Designer.cs">
+      <DependentUpon>TDUIKJ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="JKKJ\XianShi\TDZhuangTaiKJ.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="JKKJ\XianShi\TDZhuangTaiKJ.Designer.cs">
+      <DependentUpon>TDZhuangTaiKJ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="JKKJ\TanChuanKJ.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="JKKJ\TanChuanKJ.Designer.cs">
+      <DependentUpon>TanChuanKJ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="JKKJ\TangChuan\IFUIFrm.cs" />
+    <Compile Include="JKKJ\TangChuan\MoRenFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="JKKJ\TangChuan\MoRenFrm.Designer.cs">
+      <DependentUpon>MoRenFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="JKKJ\ZhuKJ.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="JKKJ\ZhuKJ.Designer.cs">
+      <DependentUpon>ZhuKJ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GongNengLei\ABSGongNengLei.cs" />
+    <Compile Include="Lei\BaoCunXlxs.cs" />
+    <Compile Include="Lei\DataJiHe.cs" />
+    <Compile Include="Lei\JianCeDuiXiang.cs" />
+    <Compile Include="Lei\JieMianLei.cs" />
+    <Compile Include="Lei\JiShuGuanLiLei.cs" />
+    <Compile Include="Lei\PeiFangLei.cs" />
+    <Compile Include="Lei\SheBeiJiHe.cs" />
+    <Compile Include="Lei\TDTestLei.cs" />
+    <Compile Include="Lei\ZongYeWuLei.cs" />
+    <Compile Include="Model\JieMianModel.cs" />
+    <Compile Include="Model\ShiJianModel.cs" />
+    <Compile Include="Model\TangChuanUIModel.cs" />
+    <Compile Include="Model\TDJiShuModel.cs" />
+    <Compile Include="Model\TongDao\TDModel.cs" />
+    <Compile Include="Model\PeiFang\TestModel.cs" />
+    <Compile Include="Model\XiangMuModel.cs" />
+    <Compile Include="Model\XuQiuModel.cs" />
+    <Compile Include="Model\ZhiJieGuo.cs" />
+    <Compile Include="JKKJ\XianShi\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="JKKJ\XianShi\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PeiFangFrm\DuiYingMaFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PeiFangFrm\DuiYingMaFrm.Designer.cs">
+      <DependentUpon>DuiYingMaFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PeiFangFrm\HuanCunFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PeiFangFrm\HuanCunFrm.Designer.cs">
+      <DependentUpon>HuanCunFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PeiFangFrm\PeiFangXuanZeFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PeiFangFrm\PeiFangXuanZeFrm.Designer.cs">
+      <DependentUpon>PeiFangXuanZeFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PeiFangFrm\PeiZhiShouWeiFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PeiFangFrm\PeiZhiShouWeiFrm.Designer.cs">
+      <DependentUpon>PeiZhiShouWeiFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PeiFangFrm\PFPeiZhiFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PeiFangFrm\PFPeiZhiFrm.Designer.cs">
+      <DependentUpon>PFPeiZhiFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PeiFangFrm\QieHuanPeiFangFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PeiFangFrm\QieHuanPeiFangFrm.Designer.cs">
+      <DependentUpon>QieHuanPeiFangFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PeiFangFrm\XuanZeJiCunPeiZhiFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PeiFangFrm\XuanZeJiCunPeiZhiFrm.Designer.cs">
+      <DependentUpon>XuanZeJiCunPeiZhiFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PeiFangFrm\XuanZeJiCunQiFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PeiFangFrm\XuanZeJiCunQiFrm.Designer.cs">
+      <DependentUpon>XuanZeJiCunQiFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PeiFangFrm\XuanZseFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PeiFangFrm\XuanZseFrm.Designer.cs">
+      <DependentUpon>XuanZseFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PeiFangFrm\ZiXiangFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PeiFangFrm\ZiXiangFrm.Designer.cs">
+      <DependentUpon>ZiXiangFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PeiFangFrm\ZongPeiZhiFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PeiFangFrm\ZongPeiZhiFrm.Designer.cs">
+      <DependentUpon>ZongPeiZhiFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ShiXianJK.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ATSJianMianJK\ATSJianMianJK.csproj">
+      <Project>{345fb1eb-f8f2-41e7-9a92-f3e99b233637}</Project>
+      <Name>ATSJianMianJK</Name>
+      <Private>False</Private>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="GongNengLei\GNKJ\DengDaiTuiChuKJ.resx">
+      <DependentUpon>DengDaiTuiChuKJ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JKKJ\PeiZhi\HuaTuKJ.resx">
+      <DependentUpon>HuaTuKJ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JKKJ\PeiZhi\XuanZeDuXieKJ.resx">
+      <DependentUpon>XuanZeDuXieKJ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JKKJ\TangChuan\TuXingFrm.resx">
+      <DependentUpon>TuXingFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JKKJ\XianShi\GengHuanTanZhenFrm.resx">
+      <DependentUpon>GengHuanTanZhenFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JKKJ\XianShi\GZKJ.resx">
+      <DependentUpon>GZKJ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JKKJ\XianShi\TangChaunKJ.resx">
+      <DependentUpon>TangChaunKJ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JKKJ\XianShi\TDBiaoGeKJ.resx">
+      <DependentUpon>TDBiaoGeKJ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JKKJ\PeiZhi\TDPeiZhiKJ.resx">
+      <DependentUpon>TDPeiZhiKJ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JKKJ\XianShi\TDLanKJ.resx">
+      <DependentUpon>TDLanKJ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JKKJ\XianShi\TDUIKJ.resx">
+      <DependentUpon>TDUIKJ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JKKJ\XianShi\TDZhuangTaiKJ.resx">
+      <DependentUpon>TDZhuangTaiKJ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JKKJ\TanChuanKJ.resx">
+      <DependentUpon>TanChuanKJ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JKKJ\TangChuan\MoRenFrm.resx">
+      <DependentUpon>MoRenFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JKKJ\ZhuKJ.resx">
+      <DependentUpon>ZhuKJ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JKKJ\XianShi\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PeiFangFrm\DuiYingMaFrm.resx">
+      <DependentUpon>DuiYingMaFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PeiFangFrm\HuanCunFrm.resx">
+      <DependentUpon>HuanCunFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PeiFangFrm\PeiFangXuanZeFrm.resx">
+      <DependentUpon>PeiFangXuanZeFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PeiFangFrm\PeiZhiShouWeiFrm.resx">
+      <DependentUpon>PeiZhiShouWeiFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PeiFangFrm\PFPeiZhiFrm.resx">
+      <DependentUpon>PFPeiZhiFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PeiFangFrm\QieHuanPeiFangFrm.resx">
+      <DependentUpon>QieHuanPeiFangFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PeiFangFrm\XuanZeJiCunPeiZhiFrm.resx">
+      <DependentUpon>XuanZeJiCunPeiZhiFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PeiFangFrm\XuanZeJiCunQiFrm.resx">
+      <DependentUpon>XuanZeJiCunQiFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PeiFangFrm\XuanZseFrm.resx">
+      <DependentUpon>XuanZseFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PeiFangFrm\ZiXiangFrm.resx">
+      <DependentUpon>ZiXiangFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PeiFangFrm\ZongPeiZhiFrm.resx">
+      <DependentUpon>ZongPeiZhiFrm.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="MES\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
