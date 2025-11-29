@@ -173,6 +173,9 @@ namespace ATSUI
 
         }
 
+        /// <summary>
+        /// 关闭
+        /// </summary>
         protected override void GuanBi()
         {
 

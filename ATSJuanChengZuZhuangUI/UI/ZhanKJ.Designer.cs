@@ -72,8 +72,8 @@
             this.Column5,
             this.Column6});
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 131);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
+            this.dataGridView1.Location = new System.Drawing.Point(0, 157);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dataGridView1.MultiSelect = false;
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersVisible = false;
@@ -85,7 +85,7 @@
             this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridView1.RowTemplate.Height = 23;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(863, 381);
+            this.dataGridView1.Size = new System.Drawing.Size(971, 457);
             this.dataGridView1.TabIndex = 25;
             // 
             // Column1
@@ -142,10 +142,10 @@
             this.ucJiLvContor1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.ucJiLvContor1.Font = new System.Drawing.Font("微软雅黑", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.ucJiLvContor1.IsZhiDu = true;
-            this.ucJiLvContor1.Location = new System.Drawing.Point(0, 512);
-            this.ucJiLvContor1.Margin = new System.Windows.Forms.Padding(4);
+            this.ucJiLvContor1.Location = new System.Drawing.Point(0, 614);
+            this.ucJiLvContor1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.ucJiLvContor1.Name = "ucJiLvContor1";
-            this.ucJiLvContor1.Size = new System.Drawing.Size(863, 149);
+            this.ucJiLvContor1.Size = new System.Drawing.Size(971, 179);
             this.ucJiLvContor1.TabIndex = 27;
             this.ucJiLvContor1.YiChuCount = 30;
             this.ucJiLvContor1.ZiTi = null;
@@ -158,8 +158,9 @@
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(863, 131);
+            this.panel1.Size = new System.Drawing.Size(971, 157);
             this.panel1.TabIndex = 26;
             // 
             // label2
@@ -167,9 +168,9 @@
             this.label2.AutoSize = true;
             this.label2.Dock = System.Windows.Forms.DockStyle.Top;
             this.label2.Font = new System.Drawing.Font("微软雅黑", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label2.Location = new System.Drawing.Point(0, 27);
+            this.label2.Location = new System.Drawing.Point(0, 31);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(101, 30);
+            this.label2.Size = new System.Drawing.Size(119, 35);
             this.label2.TabIndex = 30;
             this.label2.Text = "扫码确认";
             // 
@@ -178,9 +179,9 @@
             this.label4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label4.Font = new System.Drawing.Font("微软雅黑", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label4.Location = new System.Drawing.Point(0, 27);
+            this.label4.Location = new System.Drawing.Point(0, 31);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(706, 104);
+            this.label4.Size = new System.Drawing.Size(794, 126);
             this.label4.TabIndex = 2;
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
@@ -191,15 +192,16 @@
             this.label1.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label1.Location = new System.Drawing.Point(0, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(0, 27);
+            this.label1.Size = new System.Drawing.Size(0, 31);
             this.label1.TabIndex = 4;
             // 
             // pictureBox1
             // 
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pictureBox1.Location = new System.Drawing.Point(706, 0);
+            this.pictureBox1.Location = new System.Drawing.Point(794, 0);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(157, 131);
+            this.pictureBox1.Size = new System.Drawing.Size(177, 157);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
@@ -208,13 +210,14 @@
             // 
             // ZhanKJ
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.ucJiLvContor1);
             this.Controls.Add(this.panel1);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "ZhanKJ";
-            this.Size = new System.Drawing.Size(863, 661);
+            this.Size = new System.Drawing.Size(971, 793);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

@@ -31,12 +31,12 @@ namespace ZuZhuangUI
         public override List<QuanXianModel> GetQuanXian()
         {
             List<QuanXianModel> quanXianModels = new List<QuanXianModel>();
-            quanXianModels.Add(new QuanXianModel() { GongNengDan = "配置通道" });
-         
-            quanXianModels.Add(new QuanXianModel() { GongNengDan = "切换配方" });
-            quanXianModels.Add(new QuanXianModel() { GongNengDan = "补打" });
-            quanXianModels.Add(new QuanXianModel() { GongNengDan = "打印设计" });
-            quanXianModels.Add(new QuanXianModel() { GongNengDan = "码管理" });
+            //quanXianModels.Add(new QuanXianModel() { GongNengDan = "配置通道" });
+
+            //quanXianModels.Add(new QuanXianModel() { GongNengDan = "切换配方" });
+            //quanXianModels.Add(new QuanXianModel() { GongNengDan = "补打" });
+            //quanXianModels.Add(new QuanXianModel() { GongNengDan = "打印设计" });
+            //quanXianModels.Add(new QuanXianModel() { GongNengDan = "码管理" });
             return quanXianModels;
         }
 

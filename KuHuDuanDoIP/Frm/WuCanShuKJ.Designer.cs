@@ -39,17 +39,18 @@
             this.label2.ForeColor = System.Drawing.Color.Black;
             this.label2.Location = new System.Drawing.Point(0, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(112, 27);
+            this.label2.Size = new System.Drawing.Size(134, 31);
             this.label2.TabIndex = 136;
             this.label2.Text = "不需要参数";
             // 
             // WuCanShuKJ
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.label2);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "WuCanShuKJ";
-            this.Size = new System.Drawing.Size(280, 261);
+            this.Size = new System.Drawing.Size(315, 313);
             this.ResumeLayout(false);
             this.PerformLayout();
 
